@@ -181,3 +181,8 @@ docker build -t virtual-psychologist .
 docker run -d -p 8000:8000 virtual-psychologist
 
 
+## 🌐 Access the API
+
+Once the container is running, the API will be available at:
+
+URL: http://127.0.0.1:8000
