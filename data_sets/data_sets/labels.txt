@@ -1,0 +1,17 @@
+labels for the dataset Mental_illness:
+0:'BPD'
+1:'bipolar'
+2:'depression'
+3:'Anxiety'
+4:'schizophrenia'
+5:'mentalillness'
+
+labels for the dataset mental_illness1:
+0 : 'None'
+1 : 'anxiety' 
+2 : bipolar 
+3 : bpd
+4 : depression
+5 : none 
+6 : ocd
+7 : pstd
