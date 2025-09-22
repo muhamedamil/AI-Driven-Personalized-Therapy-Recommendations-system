@@ -1,2 +1,2 @@
 model_finetuning/ai-response-intent-finetuning/AI_response_style_detector/Model/fine_tuned_model/* filter=lfs diff=lfs merge=lfs -text
-model_finetuning/illness_prediction/Predictive_model/data_set/processed_data/preprocessed_data1.csv filter=lfs diff=lfs merge=lfs -text
+
