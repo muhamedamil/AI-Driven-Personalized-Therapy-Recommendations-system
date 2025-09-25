@@ -135,7 +135,7 @@ import streamlit as st
 import requests
 import json
 
-API_KEY = "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" 
+API_KEY = "add your API key" 
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
 def generate_ai_response(intent, sentiment, mental_health_prediction, user_message):
