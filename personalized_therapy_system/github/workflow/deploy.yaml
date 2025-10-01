@@ -1,0 +1,43 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    name: Deploy on EC2
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up SSH and Deploy to EC2
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: 13.235.50.163
+        username: ubuntu
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          echo " Pulling latest code..."
+          cd ~/main_module
+          git reset --hard
+          git clean -fd
+          git pull origin main
+
+          echo " Restarting Docker containers..."
+          docker compose down
+          docker compose up --build -d
+
+          echo "Deployment completed."
+
+          # Optional: Start ngrok (requires ngrok installed and authtoken configured)
+          if ! pgrep ngrok > /dev/null; then
+            echo " Starting Ngrok tunnel..."
+            nohup ngrok http 5000 --log=stdout > ~/ngrok.log 2>&1 &
+          else
+            echo " Ngrok is already running."
+          fi
