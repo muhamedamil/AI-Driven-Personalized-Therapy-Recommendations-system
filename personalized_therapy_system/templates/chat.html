@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🎡️ MindCare Voice Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f7f9;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header {
+      padding: 1rem;
+      background: linear-gradient(to right, #4d7c7c, #2e5e5e);
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      max-width: 960px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .info-card {
+      background-color: #eef6f6;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      color: #374949;
+      font-size: 0.95rem;
+    }
+
+    .chat-window {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1rem;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .message {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .message.you .message-content {
+      align-self: flex-end;
+      background-color: #d1f0f0;
+      color: #003d3d;
+    }
+
+    .message.bot .message-content {
+      align-self: flex-start;
+      background-color: #f0f4f8;
+      color: #1e3d3d;
+    }
+
+    .message-content {
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      max-width: 75%;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: auto;
+    }
+
+    button {
+      background-color: #4d7c7c;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #3a6363;
+    }
+
+    #botAudio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>🎡️ MindCare Voice Chat</h1>
+  </div>
+
+  <div class="container">
+    <div class="info-card">
+      <strong>User ID:</strong> {{ user_id }}<br/>
+      <strong>User Name:</strong> {{ user_name }}<br/>
+      <strong>Session ID:</strong> {{ session_id }}<br/>
+      <div class="new-session-line"><strong>New Session:</strong> {{ newly_created_session }}</div>
+      <strong>Started At:</strong> {{ session_created_at }}
+    </div>
+
+    <div id="chat" class="chat-window"></div>
+
+    <div class="controls">
+      <button id="recordBtn">🎤 Speak</button>
+      <button id="stopBtn" disabled>⏹️ Stop</button>
+    </div>
+  </div>
+
+  <audio id="botAudio"></audio>
+
+  <script>
+    let newlyCreatedSession = {{ newly_created_session | tojson }};
+
+    function updateNewSessionDisplay() {
+      const infoCard = document.querySelector(".info-card");
+      if (infoCard) {
+        const newSessionLine = infoCard.querySelector(".new-session-line");
+        if (newSessionLine) {
+          newSessionLine.innerHTML = `<strong>New Session:</strong> false`;
+        }
+      }
+    }
+
+    const recordBtn = document.getElementById("recordBtn");
+    const stopBtn = document.getElementById("stopBtn");
+    const chatWindow = document.getElementById("chat");
+    const botAudio = document.getElementById("botAudio");
+
+    let mediaRecorder, audioChunks = [], silenceTimer, audioContext, stream;
+    const silenceThreshold = 0.01, silenceDuration = 1500;
+
+    recordBtn.addEventListener('click', async () => {
+      recordBtn.disabled = true;
+      stopBtn.disabled = true;
+      addSystemMessage("Listening...");
+
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        audioContext = new AudioContext();
+        const source = audioContext.createMediaStreamSource(stream);
+        const analyser = audioContext.createAnalyser();
+        analyser.fftSize = 2048;
+        source.connect(analyser);
+
+        mediaRecorder = new MediaRecorder(stream);
+        audioChunks = [];
+        mediaRecorder.ondataavailable = e => {
+          if (e.data.size > 0) audioChunks.push(e.data);
+        };
+        mediaRecorder.onstop = processAudio;
+        mediaRecorder.start();
+        detectSilence(analyser);
+      } catch (err) {
+        addBotMessage("Error: " + err.message);
+        recordBtn.disabled = false;
+      }
+    });
+
+    function detectSilence(analyser) {
+      const data = new Uint8Array(analyser.fftSize);
+      const check = () => {
+        analyser.getByteTimeDomainData(data);
+        const maxAmp = Math.max(...data) - 128;
+        const vol = Math.abs(maxAmp) / 128;
+        if (vol < silenceThreshold) {
+          if (!silenceTimer) silenceTimer = setTimeout(() => mediaRecorder.stop(), silenceDuration);
+        } else {
+          clearTimeout(silenceTimer);
+          silenceTimer = null;
+        }
+        requestAnimationFrame(check);
+      };
+      check();
+    }
+
+    async function processAudio() {
+      stopStream();
+      addSystemMessage("Processing...");
+      const blob = new Blob(audioChunks, { type: 'audio/webm' });
+      const form = new FormData();
+      form.append("audio", blob, "input.webm");
+
+      try {
+        const res = await fetch("/chat/stream-message", {
+          method: "POST",
+          body: form
+        });
+
+        const reader = res.body.getReader();
+        const decoder = new TextDecoder();
+        let transcript = "";
+        let botReply = "";
+
+        const { value: firstChunk } = await reader.read();
+        const firstText = decoder.decode(firstChunk, { stream: true });
+
+        let botEl;
+        if (firstText.includes("<<END_OF_TRANSCRIPT>>")) {
+          const [transcriptPart, rest] = firstText.split("<<END_OF_TRANSCRIPT>>");
+          transcript = transcriptPart.trim();
+          botReply += rest.trim();
+          if (transcript) addYouMessage(transcript);
+          botEl = addBotMessage(botReply || "");
+        } else {
+          botReply += firstText.trim();
+          botEl = addBotMessage(botReply);
+        }
+
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+          const text = decoder.decode(value, { stream: true });
+          botReply += text;
+          updateBotMessage(botEl, botReply);
+        }
+
+        await speakReply(botReply);
+
+        // ✅ After first chat: update frontend flag and UI
+        if (newlyCreatedSession) {
+          newlyCreatedSession = false;
+          updateNewSessionDisplay();
+        }
+
+      } catch (err) {
+        addBotMessage("Error: " + err.message);
+      } finally {
+        recordBtn.disabled = false;
+        stopBtn.disabled = true;
+      }
+    }
+
+    async function speakReply(text) {
+  try {
+    const res = await fetch("/chat/tts", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text })
+    });
+    const { audio_base64 } = await res.json();
+    botAudio.src = `data:audio/wav;base64,${audio_base64}`;
+
+    // Enable stop button
+    stopBtn.disabled = false;
+
+    // Play audio
+    await botAudio.play();
+
+    // Disable stop button after playback ends
+    botAudio.onended = () => {
+      stopBtn.disabled = true;
+    };
+  } catch (err) {
+    addSystemMessage("TTS Error: " + err.message);
+  }
+}
+
+
+    function stopStream() {
+      stream?.getTracks().forEach(t => t.stop());
+      audioContext?.close();
+    }
+
+    function addMessage(html, klass) {
+      const wrapper = document.createElement('div');
+      wrapper.className = `message ${klass}`;
+      const container = document.createElement('div');
+      container.className = 'message-content';
+      container.innerHTML = marked.parse(html);
+      wrapper.appendChild(container);
+      chatWindow.appendChild(wrapper);
+      chatWindow.scrollTop = chatWindow.scrollHeight;
+      return wrapper;
+    }
+
+    function addYouMessage(txt)   { addMessage(txt, 'you'); }
+    function addBotMessage(txt)   { return addMessage(txt, 'bot'); }
+    function addSystemMessage(txt){ addMessage(`**${txt}**`, 'bot'); }
+
+    function updateBotMessage(wrapper, content) {
+      if (!wrapper) return;
+      const contentDiv = wrapper.querySelector('.message-content');
+      contentDiv.innerHTML = marked.parse(content);
+    }
+  </script>
+</body>
+</html>

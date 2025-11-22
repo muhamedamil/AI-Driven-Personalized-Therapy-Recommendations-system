@@ -1,0 +1,454 @@
+[2025-05-24 16:04:41] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-24 16:04:41] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-24 16:04:45] [ERROR] [rag.vector_store] [VectorStore] Initialization failed: Failed to create vector extension: greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place? (Background on this error at: https://sqlalche.me/e/20/xd2s)
+[2025-05-24 16:09:27] [INFO] [services.session_service] New session started for user 00ad20f7-3cbb-4715-a322-7a9994d5fec9: a27dd2a8-2743-4ce2-8a68-9c9cf738d702
+[2025-05-24 16:09:53] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-24 16:09:53] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-24 16:09:56] [ERROR] [rag.vector_store] [VectorStore] Initialization failed: Failed to create vector extension: greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place? (Background on this error at: https://sqlalche.me/e/20/xd2s)
+[2025-05-24 16:21:50] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-24 16:21:50] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-24 16:21:53] [ERROR] [rag.vector_store] [VectorStore] Initialization failed: Failed to create vector extension: greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place? (Background on this error at: https://sqlalche.me/e/20/xd2s)
+[2025-05-24 16:44:39] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-24 16:44:39] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-24 16:44:43] [ERROR] [rag.vector_store] [VectorStore] Initialization failed: Failed to create vector extension: greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place? (Background on this error at: https://sqlalche.me/e/20/xd2s)
+[2025-05-27 10:16:03] [INFO] [services.session_service] New session started for user 00ad20f7-3cbb-4715-a322-7a9994d5fec9: 94f114b6-8294-4351-8a1e-e273948f0889
+[2025-05-27 10:16:22] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-27 10:16:22] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-27 10:16:26] [ERROR] [rag.vector_store] [VectorStore] Initialization failed: Failed to create vector extension: greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place? (Background on this error at: https://sqlalche.me/e/20/xd2s)
+[2025-05-27 10:22:55] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-27 10:22:55] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-27 10:22:59] [ERROR] [rag.vector_store] [VectorStore] Initialization failed: PGVector.__init__() got an unexpected keyword argument 'auto_create_extension'
+[2025-05-27 10:29:54] [INFO] [rag.vector_store] [VectorStore] Ensured 'vector' extension exists.
+[2025-05-27 10:29:54] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-27 10:29:54] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-27 10:29:59] [ERROR] [rag.vector_store] [VectorStore] Initialization failed: Failed to create vector extension: greenlet_spawn has not been called; can't call await_only() here. Was IO attempted in an unexpected place? (Background on this error at: https://sqlalche.me/e/20/xd2s)
+[2025-05-27 10:50:51] [INFO] [rag.vector_store] [VectorStore] Ensured 'vector' extension exists.
+[2025-05-27 10:50:52] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-27 10:50:52] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-27 10:50:56] [INFO] [rag.vector_store] [VectorStore] PGVector initialized for collection: psychology_knowledge_base
+[2025-05-27 14:10:33] [INFO] [rag.vector_store] [VectorStore] Ensured 'vector' extension exists.
+[2025-05-27 14:10:34] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-27 14:10:34] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-27 14:10:38] [INFO] [rag.vector_store] [VectorStore] PGVector initialized for collection: psychology_knowledge_base
+[2025-05-27 14:10:38] [INFO] [services.llm_service] Starting chat pipeline
+[2025-05-27 14:10:38] [ERROR] [services.llm_service] STT failed: 'bytes' object has no attribute 'astype'
+[2025-05-27 15:04:31] [INFO] [rag.vector_store] [VectorStore] Ensured 'vector' extension exists.
+[2025-05-27 15:04:31] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-27 15:04:31] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-27 15:04:36] [INFO] [rag.vector_store] [VectorStore] PGVector initialized for collection: psychology_knowledge_base
+[2025-05-27 15:04:36] [INFO] [services.llm_service] Starting chat pipeline
+[2025-05-27 15:04:36] [ERROR] [services.llm_service] STT failed: Error opening <_io.BytesIO object at 0x000001F493157AB0>: Format not recognised.
+[2025-05-27 16:05:59] [INFO] [rag.vector_store] [VectorStore] Ensured 'vector' extension exists.
+[2025-05-27 16:05:59] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-27 16:05:59] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-27 16:06:04] [INFO] [rag.vector_store] [VectorStore] PGVector initialized for collection: psychology_knowledge_base
+[2025-05-27 16:06:04] [INFO] [services.llm_service] Starting chat pipeline
+[2025-05-27 16:06:04] [ERROR] [services.llm_service] STT failed: Error opening <_io.BytesIO object at 0x0000020312FDEC00>: Format not recognised.
+[2025-05-27 16:26:38] [INFO] [rag.vector_store] [VectorStore] Ensured 'vector' extension exists.
+[2025-05-27 16:26:40] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-27 16:26:40] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-27 16:26:46] [INFO] [rag.vector_store] [VectorStore] PGVector initialized for collection: psychology_knowledge_base
+[2025-05-27 16:26:47] [INFO] [services.llm_service] Starting chat pipeline
+[2025-05-27 16:26:47] [ERROR] [services.llm_service] STT failed: module 'ffmpeg' has no attribute 'PIPE'
+[2025-05-27 16:31:59] [INFO] [rag.vector_store] [VectorStore] Ensured 'vector' extension exists.
+[2025-05-27 16:32:02] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-27 16:32:02] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-27 16:32:07] [INFO] [rag.vector_store] [VectorStore] PGVector initialized for collection: psychology_knowledge_base
+[2025-05-27 16:32:08] [INFO] [services.llm_service] Starting chat pipeline
+[2025-05-27 16:32:09] [ERROR] [services.llm_service] STT failed: [WinError 2] The system cannot find the file specified
+[2025-05-27 20:47:03] [INFO] [services.session_service] New session started for user 00ad20f7-3cbb-4715-a322-7a9994d5fec9: 92818ebb-78a3-421e-b227-d9c054a4e1dd
+[2025-05-27 20:47:24] [INFO] [rag.vector_store] [VectorStore] Ensured 'vector' extension exists.
+[2025-05-27 20:47:25] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-27 20:47:25] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-27 20:47:30] [INFO] [rag.vector_store] [VectorStore] PGVector initialized for collection: psychology_knowledge_base
+[2025-05-27 20:47:30] [INFO] [services.llm_service] Starting chat pipeline
+[2025-05-27 20:47:30] [ERROR] [services.llm_service] STT failed: [WinError 2] The system cannot find the file specified
+[2025-05-27 20:58:45] [INFO] [rag.vector_store] [VectorStore] Ensured 'vector' extension exists.
+[2025-05-27 20:58:45] [INFO] [sentence_transformers.SentenceTransformer] Use pytorch device_name: cuda:0
+[2025-05-27 20:58:45] [INFO] [sentence_transformers.SentenceTransformer] Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L12-v2
+[2025-05-27 20:58:49] [INFO] [rag.vector_store] [VectorStore] PGVector initialized for collection: psychology_knowledge_base
+[2025-05-27 20:58:49] [INFO] [services.llm_service] Starting chat pipeline
+[2025-05-27 20:58:50] [INFO] [faster_whisper] Processing audio with duration 00:48.900
+[2025-05-27 20:58:57] [INFO] [httpx] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-05-27 20:58:57] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-27 20:58:57] [ERROR] [services.llm_service] Unexpected error
+Traceback (most recent call last):
+  File "C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\main_module\services\llm_service.py", line 130, in chat
+    final_query = rag_out.get("final_query", user_text)
+AttributeError: 'coroutine' object has no attribute 'get'
+[2025-05-28 12:52:46] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-28 12:52:46] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling a bit confused and unsure about how this chat works, and I'm wondering if you can understand what I'm saying. Can you help me clarify things?"
+[2025-05-28 12:58:35] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-28 12:58:35] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-28 13:08:57] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-28 13:08:58] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "What are some daily activities or habits that can help improve my mood and overall happiness?"
+[2025-05-28 13:13:41] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-28 13:13:42] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and unsure about what to do next, and I'm hoping for some suggestions that might help lift my spirits and improve my mood."
+[2025-05-28 13:15:09] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-28 13:15:09] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-28 15:06:57] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: RAG, VAGUE: VAGUE
+[2025-05-28 15:06:57] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and unsure about how to manage my depression. Could you recommend some effective treatment options, such as therapy types or alternative solutions, to help me cope with my symptoms and improve my mental well-being?"
+[2025-05-28 15:06:59] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents.
+[2025-05-28 15:06:59] [INFO] [rag.rag_pipeline] [RAGPipeline] Using RAG with relevant documents.
+[2025-05-28 18:41:52] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-28 18:41:52] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "Am I feeling disconnected from my surroundings or experiencing a sense of detachment from the people around me?"
+[2025-05-28 18:42:58] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-28 18:42:58] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-28 19:23:03] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-28 19:23:04] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and uncertain about how to connect with others, and I'm worried that I'm missing out on important experiences and relationships because of my fear of being alone and feeling shy. I've been trying to push through these feelings, but they're still holding me back, and I'm not sure how to break free from this cycle of detachment and disconnection."
+[2025-05-28 19:24:25] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-28 19:24:25] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm struggling to overcome feelings of detachment and disconnection from others, which are fueled by my fear of being alone and feeling shy, and I'm worried that I'm missing out on important experiences and relationships as a result; I've been trying to push through these feelings, but they're still holding me back, and I'm not sure how to break free from this cycle of detachment and disconnection, and I'm looking for guidance on how to nurture a sense of connection and relationships with others."
+[2025-05-28 23:36:34] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-28 23:36:34] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "Are my current coping mechanisms or strategies effective in managing my mental well-being?"
+[2025-05-28 23:38:01] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-28 23:38:01] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-29 12:34:51] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-29 12:34:51] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-29 12:37:16] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-29 12:37:16] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-29 13:57:03] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-29 13:57:03] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-29 14:30:07] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-29 14:30:07] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "Can you understand my frustration and feelings of loneliness when I'm talking to someone online, specifically my girlfriend, and it feels like she's not truly listening or understanding me, which makes me question why I should continue this conversation or relationship?"
+[2025-05-29 14:48:42] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-29 14:48:42] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and stuck, and I'm not sure what to do next to cope with these feelings of depression and loneliness. Can we explore ways to help me feel more connected and comforted, and find small moments of hope and comfort in my daily life?"
+[2025-05-29 14:59:33] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-29 14:59:34] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and stuck with depression, and I'm not sure what to do next to cope with these feelings of loneliness and disconnection. Can we explore ways to help me feel more connected, comforted, and hopeful in my daily life, and find small moments of comfort and joy despite feeling stuck?"
+[2025-05-29 15:34:02] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-29 15:34:03] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and stuck, and I'm not sure what to do next to cope with these feelings of depression and loneliness. Can we explore ways to help me feel more connected and comforted, and find small moments of hope and comfort in my daily life, considering my struggles with depression and loneliness?"
+[2025-05-29 15:59:56] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-29 15:59:56] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-29 18:05:06] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-29 18:05:07] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "Amil, feeling overwhelmed and depressed, and I'm struggling to find ways to cope with these emotions; could you help me identify what might be contributing to this sense of depression and suggest some comforting activities or topics to discuss that might bring me solace and support in this moment?"
+[2025-05-29 18:14:50] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-29 18:14:51] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "What can I do to improve my mental state, as I'm struggling with feelings of loneliness and disconnection, and I'm finding it difficult to identify the underlying causes of my depression and find effective ways to cope with these emotions?"
+[2025-05-29 18:22:17] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-29 18:22:18] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "Can I still perform my job duties effectively while struggling with feelings of loneliness and disconnection, and what steps can I take to improve my mental state and overcome these emotions?"
+[2025-05-29 18:24:35] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-29 18:24:36] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and stuck, and I'm not sure how to break free from this cycle of loneliness and disconnection. I've been trying to focus on my job duties, but it's hard to shake off the feeling that I'm just going through the motions. I want to know if it's possible to still perform my job effectively while struggling with these emotions, and what specific steps I can take to overcome these feelings and improve my mental state."
+[2025-05-29 18:27:02] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-29 18:27:03] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and stuck in a cycle of loneliness and disconnection, and I'm struggling to perform my job duties effectively while dealing with these emotions. I'm worried that I'm just going through the motions and not truly connecting with others. Can you help me understand how to break free from this cycle, and what specific steps I can take to overcome these feelings and improve my mental state, while still performing my job duties effectively?"
+[2025-05-29 18:28:34] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-29 18:28:34] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-30 17:12:26] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-30 17:12:26] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and anxious right now, and I'm not sure what steps to take to calm myself down - can you offer some suggestions or strategies to help me manage my nervousness?"
+[2025-05-30 17:21:01] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-30 17:21:01] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "Could you offer some suggestions to help me cope with feelings of regret and guilt after making a decision that's been weighing on my mind?"
+[2025-05-30 17:50:12] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-30 17:50:13] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "Are you able to understand and respond to my thoughts and feelings, or do I feel unheard and disconnected in this conversation?"
+[2025-05-30 18:45:21] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-30 18:45:21] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-30 18:51:19] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-30 18:51:20] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "Are there situations or relationships in my life where I feel restricted or held back by people in positions of authority or leadership, and if so, how can I navigate these feelings of powerlessness to regain a sense of control?"
+[2025-05-30 18:58:46] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-30 18:58:46] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-30 18:59:30] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-30 18:59:30] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "Can you help me feel more connected and understood in this conversation, and are there specific ways of responding that would make me feel more comfortable and heard, considering my struggles with schizophrenia?"
+[2025-05-30 19:01:27] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-30 19:01:28] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and stuck in my thoughts, and I'm not sure if I can express myself clearly, which is making me feel unheard and disconnected. I'm from Karnal, Kerala, and I'm not sure how that's relevant, but I feel like it's important to share. Can you help me untangle my thoughts and feelings, and make me feel more understood and connected?"
+[2025-05-30 19:08:26] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-30 19:08:26] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "Can you help me clarify and organize my overwhelming thoughts and feelings, which are making me feel stuck and disconnected, and ensure that I feel heard and understood, considering my background from Karnal, Kerala, and acknowledging that I'm struggling to express myself clearly?"
+[2025-05-30 19:31:09] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-30 19:31:10] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm struggling to articulate my thoughts and feelings, which is making me feel overwhelmed, unheard, and disconnected. I'm worried that my background, being from Karnal, Kerala, might be influencing my thoughts and feelings, but I'm not sure how. I'm looking for help to untangle my thoughts, make sense of my emotions, and feel more understood and connected. Can you support me in exploring my feelings, and help me find a way to move forward and feel more grounded?"
+[2025-05-30 19:40:39] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-30 19:40:40] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and stuck in my thoughts, and I'm struggling to articulate my feelings, which is making me feel unheard, disconnected, and worried that my background, being from Karnal, Kerala, might be influencing my thoughts and feelings in ways I'm not aware of. I'm looking for help to untangle my emotions, make sense of my feelings, and feel more understood, connected, and grounded. Can you support me in exploring my feelings, and help me find a way to move forward and feel more grounded, considering my cultural background and its potential impact on my emotional experience?"
+[2025-05-30 22:51:39] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-30 22:51:39] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-30 23:24:29] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-30 23:24:29] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-30 23:27:28] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-30 23:27:28] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling uncertain about a specific game mode and I'd like to clarify whether it's working properly or not; could you help me identify if it's functioning as intended?"
+[2025-05-30 23:37:28] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-30 23:37:28] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm currently facing some mental health issues and I'd like to talk about my past struggles, specifically how they're affecting me now, and explore ways to address them in a culturally sensitive manner, considering my background from Karnal, Kerala."
+[2025-05-31 00:02:47] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: RAG, VAGUE: VAGUE
+[2025-05-31 00:02:47] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling uncertain about a specific game mode, and I'd like to clarify whether it's working properly or not. Could you help me identify if it's functioning as intended, perhaps by exploring the game mode's expected behavior, troubleshooting steps I've taken, and potential next steps like consulting resources or seeking community feedback?"
+[2025-05-31 00:02:48] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents.
+[2025-05-31 00:02:48] [INFO] [rag.rag_pipeline] [RAGPipeline] Using RAG with relevant documents.
+[2025-05-31 00:09:14] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-31 00:09:14] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and struggling with depression, and I'm unsure about how to cope with these feelings. Could you help me explore ways to alleviate my depression, taking into account my cultural background from Karnal, Kerala, and provide guidance on how to prioritize my emotional well-being and self-care?"
+[2025-05-31 00:11:21] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-31 00:11:21] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-31 00:12:37] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: CLEAR
+[2025-05-31 00:12:37] [INFO] [rag.rag_pipeline] [RAGPipeline] No RAG needed and query is clear. Skipping RAG.
+[2025-05-31 15:24:05] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-31 15:24:05] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?
+[2025-05-31 17:47:37] [INFO] [rag.rag_pipeline] [RAGPipeline] RAG: NO_RAG, VAGUE: VAGUE
+[2025-05-31 17:47:37] [INFO] [rag.rag_pipeline] [RAGPipeline] Expanded query: "I'm feeling overwhelmed and depressed today because I don't have anyone to talk to, and I'm craving human connection and understanding."
+[2025-06-02 15:21:15] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: '"I'm struggling with feelings of depression, and I'm craving human connection and understanding. I'm looking for some Ramadan-related coping mechanisms or strategies that can support my mental health and provide comfort during this challenging time."'
+[2025-06-02 15:21:15] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-02 15:40:01] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: '"I'm struggling with feelings of depression, and I'm craving human connection and understanding during Ramadan. I'm looking for some Ramadan-related coping mechanisms or strategies that can support my mental health and provide comfort during this challenging time, particularly in the absence of in-person human connection."'
+[2025-06-02 15:40:01] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-02 15:52:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: '"I'm struggling with feelings of depression and disconnection during Ramadan, and I'm craving human connection and understanding. I'm looking for some Ramadan-related coping mechanisms or strategies that can support my mental health and provide comfort, particularly in the absence of in-person human connection. Can you help me explore ways to adapt these strategies to my needs and find alternative ways to fulfill my desire for human connection and community during this challenging time?"'
+[2025-06-02 15:52:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-02 16:43:08] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: '"I'm struggling with feelings of depression and disconnection during Ramadan, and I'm craving human connection and understanding. I'm looking for some Ramadan-related coping mechanisms or strategies that can support my mental health and provide comfort, particularly in the absence of in-person human connection. Can you help me explore ways to adapt these strategies to my needs and find alternative ways to fulfill my desire for human connection and community during this challenging time, considering my struggles with depression and feelings of isolation?"'
+[2025-06-02 16:43:08] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-02 17:31:55] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'I am madam and I am feeling like depressed because I always think about my past so I need some help from you to avoid all these things. Can you help me?'
+[2025-06-02 17:31:55] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-02 18:08:09] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'Actually I'm feeling sad because of my, lot of my friends talking and then negative things on me and so I just want you to talk sometime soon.'
+[2025-06-02 18:08:09] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-02 18:09:46] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'And also like most of the time I am feeling very anxious and I always think about my past which is which is bad thing happened to me and that is the one thing I always remember and I over think about that and make my mind messed up. So I want a solution for this so do you have any suggestions for me to sort these mental issues.'
+[2025-06-02 18:09:46] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-03 19:15:30] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: '"I'm struggling to cope with feelings of sadness and anxiety, triggered by negative comments from friends and painful memories from my past. I often get stuck in a loop, overthinking and feeling overwhelmed. I'm looking for suggestions to help me break free from these patterns, practice self-compassion, and find ways to calm my mind and focus on the present moment?"'
+[2025-06-03 19:15:30] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-04 17:36:02] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: '"I'm struggling to cope with feelings of sadness and anxiety triggered by negative comments from friends and painful memories from my past, which often lead to overthinking and feeling overwhelmed. I'm seeking suggestions to practice self-compassion, break free from these patterns, and find ways to calm my mind and focus on the present moment, while acknowledging the validity of my emotions and the weight of my past experiences. Can you offer guidance on how to navigate these challenges and support me in my journey towards healing and finding peace?"'
+[2025-06-04 17:36:02] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-04 17:41:37] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: '"I'm feeling overwhelmed and anxious because I'm planning to record someone who's recording, which is triggering memories of past traumatic experiences and feelings of sadness. I'm struggling to cope with these emotions and need help to break free from overthinking, practice self-compassion, and focus on the present moment."'
+[2025-06-04 17:41:37] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-06 15:48:20] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: '"Hi, I'm feeling a bit stuck and unsure where to start, can we talk about what's been going on?"'
+[2025-06-06 15:48:20] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-06 21:17:46] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "Go"? Are you feeling overwhelmed and wanting to take a step forward, or is there something specific you're trying to accomplish or move on from?'
+[2025-06-06 21:17:46] [INFO] [rag.rag_pipeline] [RAGPipeline] Using RAG with relevant documents.
+[2025-06-06 21:36:49] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and unsure where to start, can we talk about what's been going on and how I can get support?"'
+[2025-06-06 21:36:49] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-06 22:41:48] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"Hi, I'm feeling overwhelmed and unsure where to start, can we talk about what's going on?"'
+[2025-06-06 22:41:48] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-07 00:21:13] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and stuck, and I'm not sure where to start or what to say."'
+[2025-06-07 00:21:13] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 00:09:08] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Hello, I'm Adil and currently I'm facing many health issues like depression, anxiety and road. So I need to support a companion who can support me emotionally and I'm seeking for a help to sort all these things which I'm facing right now.'
+[2025-06-09 00:09:08] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 00:11:13] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'I am currently facing a lot of mental health issues like anxiety depressions and some other things and it is happening because of the things what I was overthinking about what happened to me in the past few months. So there is a main reason why I am getting this emotionally downfading. So I need a person who would listen to me and always support to me like how we can handle these situations and so we will be able to do that.'
+[2025-06-09 00:11:13] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 00:18:05] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Hello, can you hear me what I'm saying?'
+[2025-06-09 00:18:05] [INFO] [rag.rag_pipeline] [RAGPipeline] Using RAG with relevant documents.
+[2025-06-09 00:27:34] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed by a deep sense of isolation and disconnection from others right now."'
+[2025-06-09 00:27:34] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 00:48:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"What else can I do to cope with my feelings of being overwhelmed and stuck?"'
+[2025-06-09 00:48:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 01:37:31] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and stuck, and I'm reaching out for some guidance and support to help me navigate my current situation and find a way forward."'
+[2025-06-09 01:37:31] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 01:47:35] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm overwhelmed by a constant stream of thoughts and emotions, and it feels like I'm having a hard time distinguishing between them or finding any mental clarity."'
+[2025-06-09 01:47:35] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 02:27:47] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"What's been going on that's making me feel uncertain or overwhelmed?"'
+[2025-06-09 02:27:47] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 02:32:32] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and stuck, and I'm not sure where to start or what to say."'
+[2025-06-09 02:32:32] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 02:34:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"Hello, I'm lacking fulfillment or feeling empty inside, and I'm not sure why."'
+[2025-06-09 02:34:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 02:35:52] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'I don't know how to walk slow.'
+[2025-06-09 02:35:52] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 02:42:15] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and stuck, repeating the same thoughts or phrases in my head, and I'm not seem to move forward or express myself clearly. Please help me break this cycle."'
+[2025-06-09 02:42:15] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and stuck, and I'm not sure where to start or what to say."'
+[2025-06-09 02:42:15] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 02:42:15] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 02:45:01] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and unsure where to start, can we talk about what's been going on and how I can get support?"'
+[2025-06-09 02:45:01] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 02:49:38] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Are you feeling overwhelmed or anxious, and that's why you're repeating "hello" multiple times?'
+[2025-06-09 02:49:38] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 02:51:20] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and unsure where to start, can we talk about what's been going on and how I can get support?"'
+[2025-06-09 02:51:20] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 02:58:05] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and unsure where to start, can we talk about what's been going on and how I can get support?"'
+[2025-06-09 02:58:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 03:03:25] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and frustrated, can we talk about what's going on?"'
+[2025-06-09 03:03:25] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 03:08:26] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and unsure where to start, can we talk about what's been going on and how I can get support?"'
+[2025-06-09 03:08:26] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 03:16:30] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Are you feeling overwhelmed or anxious, and that's why you're reaching out with a repeated greeting?'
+[2025-06-09 03:16:30] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 03:18:36] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Are you feeling overwhelmed or anxious, and that's why you're reaching out with a repeated greeting?'
+[2025-06-09 03:18:36] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 03:23:46] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and unsure where to start, can we talk about what's been going on and how I'm feeling?"'
+[2025-06-09 03:23:46] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 03:24:30] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"Can I talk about a person named Bill who is causing me stress or anxiety?"'
+[2025-06-09 03:24:30] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 03:25:27] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and unsure where to start, can we talk about what's been going on and how I can get support?"'
+[2025-06-09 03:25:27] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 12:25:16] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and hopeless, and I'm not sure why or how to make it stop."'
+[2025-06-09 12:25:16] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 13:09:58] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"Hi, I'm feeling a bit stuck or unsure about where to start, and I'm hoping to talk to someone about what's on my mind."'
+[2025-06-09 13:09:58] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 13:12:47] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and unsure where to start, can we talk about what's been going on and how I can get support?"'
+[2025-06-09 13:12:47] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 13:14:18] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What's been going on that's making you feel unsure or overwhelmed right now?'
+[2025-06-09 13:14:18] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 13:56:55] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm struggling with depression, anxiety, and feeling overwhelmed, which is impacting my overall well-being. Could you please offer some guidance and support to help me cope with these challenges?"'
+[2025-06-09 13:56:55] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 14:08:43] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"When I'm feeling depressed, I wish I had a constant support system available to me at all times, so what can I do to ensure I have access to that kind of support during those difficult moments?"'
+[2025-06-09 14:08:43] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 14:10:25] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm struggling to eat and feeling overwhelmed, which is impacting my daily life and overall well-being; how can I overcome this challenge and find ways to nourish myself while coping with depression, anxiety, and feeling overwhelmed?"'
+[2025-06-09 14:10:25] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 14:12:15] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"Could you please elaborate on what's behind my repetitive 'hello' messages, and how can we work together to address the underlying feelings of depression, anxiety, and overwhelm that I'm struggling with?"'
+[2025-06-09 14:12:15] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 14:13:30] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"Could you please elaborate on what's been on my mind lately, specifically in relation to my struggles with depression, anxiety, and feeling overwhelmed, and how I can better cope with these challenges?"'
+[2025-06-09 14:13:30] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 14:19:45] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling stuck and overwhelmed, and I'm not sure how to move forward with my depression and anxiety, despite trying to practice self-care and reach out for support."'
+[2025-06-09 14:19:45] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 14:22:26] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'I'm feeling so lonely, I'm feeling so depressed.'
+[2025-06-09 14:22:26] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 14:24:34] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed by persistent loneliness and depression, and I'm struggling to cope with these emotions and find ways to regain a sense of control and comfort in my daily life."'
+[2025-06-09 14:24:34] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 15:52:37] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm struggling with persistent feelings of sadness and hopelessness, and I'm not sure what's causing it or how to manage it."'
+[2025-06-09 15:52:37] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 15:59:29] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What about having a medicine for depression? Is that really good for our health and for our mental health?'
+[2025-06-09 15:59:29] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 16:01:12] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm struggling with persistent feelings of sadness and hopelessness, and I'm not sure what's causing it or how to manage it. I'm wondering if my current mental state, which I'm referring to as 'C4 depression', is related to my overall mental health condition. Could you offer some suggestions on how to cope with these feelings, and perhaps help me understand if there's a connection between my current state and my overall well-being?"'
+[2025-06-09 16:01:12] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 16:01:45] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'For thinking about suicide'
+[2025-06-09 16:01:45] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 16:06:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'I am feeling so lonely, so I want some remedial measures which will help to improve my mode.'
+[2025-06-09 16:06:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 16:08:05] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I've been stuck in my thoughts, constantly dwelling on past experiences, particularly those from my college days, and it's making me feel overwhelmed and lonely. I'm struggling to shake off these feelings, and I'm looking for some guidance on how to overcome this emotional burden and improve my mood."'
+[2025-06-09 16:08:05] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 16:25:24] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm struggling with depression and I'm looking for some practical tips on how to manage my physical symptoms, such as changes in appetite or sleep patterns, to help improve my mental well-being."'
+[2025-06-09 16:25:24] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 16:31:44] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Hey, and also like I'm feeling so last so tired in the last few days and Also, and also I'm not getting enough sleep and I always thinking about Something that was that was happened in my past past past Yeah past life. So I am struggling to sleep and eating food and I don't know what is happening to me So can you tell me what and all the things I can do to To improve my mental health and my mood'
+[2025-06-09 16:31:44] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 16:33:05] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'So, last few days I am facing so many issues in the company which I am working in. Like I am getting so many work pressure and because of that I also am not able to sleep very well during the night period, during the night and yeah, I am feeling so, I am feeling so down and I don't know what to do in this moment.'
+[2025-06-09 16:33:05] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-09 16:36:24] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Today was a very good day for me because in my college, I met a new friend who is very good to spend time with him and after that, having a good talk, we went to a coffee and had a coffee and we talked about our futures like starting a startup like that.'
+[2025-06-09 16:36:24] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 13:17:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and stuck, and I'm not sure what's going on or how to express it, can you help me figure out what's going on and how to move forward?"'
+[2025-06-11 13:17:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 13:25:15] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 13:25:15] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 13:39:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Are you feeling overwhelmed or stuck, and you're not sure how to express or process your emotions right now?'
+[2025-06-11 13:39:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 13:46:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Are you feeling overwhelmed or stuck, and you're not sure how to express or process your emotions right now?'
+[2025-06-11 13:46:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 13:47:04] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and stuck, repeating the same thoughts or feelings in my head, and I'm not sure how to break free from this cycle."'
+[2025-06-11 13:47:04] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 14:08:27] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 14:08:27] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 14:10:31] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and stuck, can we talk about what's going on and how to move forward?"'
+[2025-06-11 14:10:31] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 14:16:41] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and stuck, can we talk about what's going on and how to move forward?"'
+[2025-06-11 14:16:41] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 14:16:45] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 14:16:45] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 14:20:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 14:20:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 14:24:56] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and unable to express my emotions, can you help me process what's going on?"'
+[2025-06-11 14:24:56] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 14:25:07] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 14:25:07] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 14:28:58] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 14:28:58] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 14:29:22] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 14:29:22] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 14:30:44] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'I'm happy to help! Since the original query is blank, I'll assume it's a new conversation. Here's an expanded query to get started:
+
+"What's been on your mind lately, and how have you been feeling emotionally?"'
+[2025-06-11 14:30:44] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 14:34:19] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 14:34:19] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 15:23:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and anxious, can you help me calm down?"'
+[2025-06-11 15:23:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 15:23:35] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 15:23:35] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 15:24:05] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling excited and enthusiastic, but I'm not sure why - can we explore what's behind this sudden emotional surge?"'
+[2025-06-11 15:24:05] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 15:24:09] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"What's driving my sense of urgency and restlessness right now?"'
+[2025-06-11 15:24:09] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 15:24:25] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling grateful and relieved this morning, and I'm wondering if we can discuss something that's been on my mind, now that we have a bit more time to talk."'
+[2025-06-11 15:24:25] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 15:24:32] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 15:24:32] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 15:24:37] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 15:24:37] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 15:24:43] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and stuck, can you help me process what's going on?"'
+[2025-06-11 15:24:43] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 16:34:41] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm overwhelmed with feelings of guilt and regret, and I'm not sure what to do or how to make amends."'
+[2025-06-11 16:34:41] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 16:35:16] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling frustrated and overwhelmed, can you help me talk through what's going on?"'
+[2025-06-11 16:35:16] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 16:35:38] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"Can you help me understand what's driving my repetitive thoughts about doing 'a little bit of this'? Is there something specific I'm trying to cope with or accomplish?"'
+[2025-06-11 16:35:38] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 16:36:02] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed and frustrated, and I'm trying to convince myself to stop engaging in a particular behavior that's causing me distress, but I'm struggling to break free from it."'
+[2025-06-11 16:36:02] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 20:35:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 20:35:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 20:49:55] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Are you feeling overwhelmed or stuck in a repetitive thought pattern, and you're not sure how to express or move forward from this emotional state?'
+[2025-06-11 20:49:55] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 21:56:11] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 21:56:11] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-11 22:33:33] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-11 22:33:33] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-12 00:57:25] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"What's driving my urge to push myself to extreme limits, and how can I find a healthier way to cope with these feelings?"'
+[2025-06-12 00:57:25] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-13 17:27:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-13 17:27:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-13 17:29:43] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-13 17:29:43] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-13 17:56:49] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-13 17:56:49] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-13 18:27:38] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-13 18:27:38] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-13 18:29:09] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm here to explore my thoughts and emotions, and I'm open to discussing a challenge or emotional state, sharing a hobby or interest, or asking a question on a topic, but I'm not sure where to start, so I'll just take things as they come and see where our conversation takes us."'
+[2025-06-13 18:29:09] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-13 23:47:37] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm here to explore my thoughts and emotions, and I'm open to discussing a challenge or emotional state, sharing a hobby or interest, or asking a question on a topic, but I'm not sure where to start, so I'll just take things as they come and see where our conversation takes us, perhaps starting with a reflection on my current emotional horizon or a description of a serene retreat that symbolizes our conversation space."'
+[2025-06-13 23:47:37] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-13 23:48:55] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm here to explore my thoughts and emotions, and I'm open to discussing a challenge or emotional state, sharing a hobby or interest, or asking a question on a topic, but I'm not sure where to start, so I'll just take things as they come and see where our conversation takes us, perhaps starting with a reflection on my current emotional horizon or a description of a serene retreat that symbolizes our conversation space, and I'd like to intertwine these reflections to create a rich starting point, describing my serene retreat and "within this retreat, reflecting on my current emotional horizon, looking outwards at the emotions, situations, or thought patterns that appear on the horizon of my life right now, and looking inwards at how the serene environment makes me feel in relation to what's on the horizon."'
+[2025-06-13 23:48:55] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-14 13:09:47] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you mean by "You"? Are you trying to understand my role or purpose in this conversation, or is there something specific you'd like to know or talk about?'
+[2025-06-14 13:09:47] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-14 13:57:03] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '... ... ... ... ...'
+[2025-06-14 13:57:03] [INFO] [rag.rag_pipeline] [RAGPipeline] Using RAG with relevant documents.
+[2025-06-14 13:59:52] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"What would you like to talk about or explore in this conversation, and how can I best support you as a compassionate listener and friend?"'
+[2025-06-14 13:59:52] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-14 15:15:26] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed with my work-life balance, specifically the pressure to be constantly available for my job, leaving me little time for personal interests or relaxation. I'd like to explore strategies or mindsets that might help me set healthier boundaries without feeling guilty or worrying about professional repercussions. Can you offer validation of my feelings, exploratory questions to help me find potential solutions, and guidance on how to prioritize my personal time, including reviving my passion for painting?"'
+[2025-06-14 15:15:26] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-14 15:41:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed with my work-life balance, specifically the pressure to be constantly available for my job, leaving me little time for personal interests or relaxation. I'd like to explore strategies or mindsets that might help me set healthier boundaries without feeling guilty or worrying about professional repercussions. Can you offer validation of my feelings, exploratory questions to help me find potential solutions, and guidance on how to prioritize my personal time, including reviving my passion for painting, considering my job as a Digital Marketing Specialist in a small, dynamic team with an unspoken expectation of availability beyond traditional hours, and my current emotional state of frustration, anxiety, and worry about burnout?"'
+[2025-06-14 15:41:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-14 15:52:29] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"I'm feeling overwhelmed with my work-life balance, specifically the pressure to be constantly available for my job as a Digital Marketing Specialist in a small, dynamic team with an unspoken expectation of availability beyond traditional hours. I'd like to explore strategies or mindsets that might help me set healthier boundaries without feeling guilty or worrying about professional repercussions. Can you offer validation of my feelings, exploratory questions to help me find solutions, and guidance on how to prioritize my personal time, including reviving my passion for painting, considering my current emotional state of frustration, anxiety, and worry about burnout?"'
+[2025-06-14 15:52:29] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-14 16:15:34] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"Could you provide more insight into how you're currently feeling overwhelmed, specifically in regards to setting boundaries with your work and reviving your passion for painting, considering your job as a Digital Marketing Specialist in a small, dynamic team with an unspoken expectation of availability beyond traditional hours, and your current emotional state of frustration, anxiety, and worry about burnout?"'
+[2025-06-14 16:15:34] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-14 20:22:24] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"Could you provide more insight into how you're currently feeling overwhelmed, specifically in regards to setting boundaries with your work and reviving your passion for painting, considering your job as a Digital Marketing Specialist in a small, dynamic team with an unspoken expectation of availability beyond traditional hours, and your current emotional state of frustration, anxiety, and worry about burnout?"'
+[2025-06-14 20:22:24] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-14 23:08:31] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '"Could you provide more insight into what's been feeling overwhelming about your work-life balance, specifically the pressure to be constantly available for your job, and how you'd like to explore strategies or mindsets to set healthier boundaries without feeling guilty or worrying about professional repercussions, considering your passion for painting and current emotional state of frustration, anxiety, and worry about burnout?"'
+[2025-06-14 23:08:31] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-15 00:31:33] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Could you elaborate on what you mean by "You" in the context of our conversation about setting healthier boundaries, prioritizing your personal time, and reviving your passion for painting, considering your current emotional state of frustration, anxiety, and worry about burnout?'
+[2025-06-15 00:31:33] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-15 00:36:04] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Could you elaborate on what's been feeling overwhelming about your work-life balance, specifically the pressure to be constantly available for your job, and how you'd like to explore strategies or mindsets to set healthier boundaries without feeling guilty or worrying about professional repercussions, considering your passion for painting and current emotional state of frustration, anxiety, and worry about burnout?'
+[2025-06-15 00:36:04] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-15 00:39:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Could you elaborate on what's been feeling overwhelming about your work-life balance, specifically the pressure to be constantly available for your job, and how you'd like to explore strategies or mindsets to set healthier boundaries without feeling guilty or worrying about professional repercussions, considering your passion for painting and current emotional state of frustration, anxiety, and worry about burnout?'
+[2025-06-15 00:39:06] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-15 00:41:04] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Here is the rewritten query:
+
+"Considering your current emotional state of frustration, anxiety, and worry about burnout, could you elaborate on what's been feeling overwhelming about your work-life balance, specifically the pressure to be constantly available for your job, and how you'd like to explore strategies or mindsets to set healthier boundaries without feeling guilty or worrying about professional repercussions, taking into account your passion for painting and your desire to prioritize your personal time and well-being?"'
+[2025-06-15 00:41:04] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-15 00:43:20] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Here is the rewritten query:
+
+"Considering your current emotional state of frustration, anxiety, and worry about burnout, could you elaborate on what's been feeling overwhelming about your work-life balance, specifically the pressure to be constantly available for your job, and how you'd like to explore strategies or mindsets to set healthier boundaries without feeling guilty or worrying about professional repercussions, taking into account your passion for painting and your desire to prioritize your personal time and well-being?"'
+[2025-06-15 00:43:20] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-15 00:51:39] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Considering your current emotional state of frustration, anxiety, and worry about burnout, could you elaborate on what's been feeling overwhelming about your work-life balance, specifically the pressure to be constantly available for your job, and how you'd like to explore strategies or mindsets to set healthier boundaries without feeling guilty or worrying about professional repercussions, taking into account your passion for painting and your desire to prioritize your personal time and well-being?'
+[2025-06-15 00:51:39] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-15 00:55:19] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Considering your current emotional state of frustration, anxiety, and worry about burnout, could you elaborate on what's been feeling overwhelming about your work-life balance, specifically the pressure to be constantly available for your job, and how you'd like to explore strategies or mindsets to set healthier boundaries without feeling guilty or worrying about professional repercussions, taking into account your passion for painting and your desire to prioritize your personal time and well-being?'
+[2025-06-15 00:55:19] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-15 00:58:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: '... ... ... ... ... ...'
+[2025-06-15 00:58:17] [INFO] [rag.rag_pipeline] [RAGPipeline] Using RAG with relevant documents.
+[2025-06-15 13:04:52] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What do you want to talk about or ask about yourself?'
+[2025-06-15 13:04:52] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-15 13:08:03] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What would you like to talk about or ask about yourself, considering recent days, emotions, interests, or aspirations?'
+[2025-06-15 13:08:03] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-15 14:25:04] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'What would you like to talk about or ask about yourself, considering recent days, emotions, interests, or aspirations?'
+[2025-06-15 14:25:04] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-25 10:42:57] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'You'
+[2025-06-25 10:42:57] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-06-25 10:51:02] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'I'm here to listen and support you.'
+[2025-06-25 10:51:02] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-07-03 09:51:11] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'It seems like you may have accidentally shared a video script instead of a question or concern. Could you please rephrase or share what's on your mind, and I'll do my best to assist you?'
+[2025-07-03 09:51:11] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-07-03 10:04:55] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'But today, the owner had to find her to take her to the vet for her first vaccination shot. So first, he snapped his fingers and suddenly, two dogs in the left corner moved, but only one of them was real, so he tried again by rattling the pack of her favorite snack, but the clever pup stayed perfectly still. As a last try, the owner pressed a special remote button because every time she hears that click, she thinks it's dinner time, and just like that, the sneaky little thief gets caught every time.'
+[2025-07-03 10:04:55] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-07-05 18:07:01] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'I'll see you in a little bit. I'll see you in a little bit. Bye.'
+[2025-07-05 18:07:01] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-07-05 18:08:34] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'that is okay fine totally fine'
+[2025-07-05 18:08:34] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-07-05 19:27:07] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'Okay, totally fine. I am okay now.'
+[2025-07-05 19:27:07] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-07-05 19:57:25] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'Because I don't have any problems right now.'
+[2025-07-05 19:57:25] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-07-05 19:59:27] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'I'm having trouble putting my feelings into words right now, and I'm not sure what exactly is bothering me.'
+[2025-07-05 19:59:27] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-07-05 20:01:23] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'Anything specific in my mind, most like random thoughts that is coming randomly in random days.'
+[2025-07-05 20:01:23] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-07-11 15:17:03] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'Can you help me understand what you mean by "grab his eyes from the stomach" and what kind of "physical clarifies and trays" you're looking for?'
+[2025-07-11 15:17:03] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-08-27 20:29:10] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'I'm sorry.'
+[2025-08-27 20:29:10] [INFO] [rag.rag_pipeline] [RAGPipeline] Using RAG with relevant documents.
+[2025-08-27 20:29:59] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'I'm apologizing and trying to gather my thoughts, can you help me process what's going on and offer support?'
+[2025-08-27 20:29:59] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-08-27 20:52:30] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 3 documents for query: 'Can you help me understand what's overwhelming me right now, and how I can break it down into smaller, more manageable parts?'
+[2025-08-27 20:52:30] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.
+[2025-10-13 06:24:32] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved 0 documents for query: 'Oh my God! Hey, hi! I'm a little sorry, I couldn't do that. Let me down one ex-money mirror.'
+[2025-10-13 06:24:32] [INFO] [rag.rag_pipeline] [RAGPipeline] Retrieved documents not relevant. Skipping RAG.

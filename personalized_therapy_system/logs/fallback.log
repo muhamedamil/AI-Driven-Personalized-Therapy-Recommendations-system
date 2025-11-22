@@ -1,0 +1,87 @@
+2025-05-14 00:41:13,655 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Low Similarity Score triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse', 'top_score': 0.5430352364161461}
+2025-05-14 00:45:48,510 - ERROR - rag.utils.fallback_handler - [FallbackHandler] Vector Search Failure triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse'} | Error: 'coroutine' object is not subscriptable
+Traceback (most recent call last):
+  File "c:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\test.py", line 28, in is_query_relevant
+    doc, score = results[0]
+TypeError: 'coroutine' object is not subscriptable
+2025-05-14 00:46:47,768 - ERROR - rag.utils.fallback_handler - [FallbackHandler] Vector Search Failure triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse'} | Error: 'coroutine' object is not subscriptable
+Traceback (most recent call last):
+  File "c:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\test.py", line 28, in is_query_relevant
+    doc, score = results[0]
+TypeError: 'coroutine' object is not subscriptable
+2025-05-14 00:52:26,139 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Low Similarity Score triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse', 'top_score': 0.5430352364161461}
+2025-05-14 00:52:26,149 - ERROR - rag.utils.fallback_handler - [FallbackHandler] Vector Search Failure triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse'} | Error: object bool can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\test.py", line 33, in is_query_relevant
+    return await FallbackHandler.handle(
+TypeError: object bool can't be used in 'await' expression
+2025-05-14 00:53:03,406 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Low Similarity Score triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse', 'top_score': 0.5430352364161461}
+2025-05-14 00:53:03,410 - ERROR - rag.utils.fallback_handler - [FallbackHandler] Vector Search Failure triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse'} | Error: object bool can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\test.py", line 33, in is_query_relevant
+    return await FallbackHandler.handle(
+TypeError: object bool can't be used in 'await' expression
+2025-05-14 00:56:19,275 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Low Similarity Score triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse', 'top_score': 0.5430352364161461}
+2025-05-14 00:56:19,303 - ERROR - rag.utils.fallback_handler - [FallbackHandler] Vector Search Failure triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse'} | Error: object bool can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\test.py", line 33, in is_query_relevant
+    return await FallbackHandler.handle(
+TypeError: object bool can't be used in 'await' expression
+2025-05-14 00:57:29,081 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Low Similarity Score triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse', 'top_score': 0.5430352364161461}
+2025-05-14 00:57:29,091 - ERROR - rag.utils.fallback_handler - [FallbackHandler] Vector Search Failure triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse'} | Error: object bool can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\test.py", line 33, in is_query_relevant
+    return await FallbackHandler.handle(
+TypeError: object bool can't be used in 'await' expression
+2025-05-14 00:58:13,568 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Low Similarity Score triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse', 'top_score': 0.5430352364161461}
+2025-05-14 00:58:13,569 - INFO - rag.utils.fallback_handler - User Fallback Message: Low similarity score. Skipping RAG.
+2025-05-14 00:58:13,569 - ERROR - rag.utils.fallback_handler - [FallbackHandler] Vector Search Failure triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse'} | Error: object bool can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\test.py", line 33, in is_query_relevant
+    return await FallbackHandler.handle(
+TypeError: object bool can't be used in 'await' expression
+2025-05-14 00:58:13,569 - INFO - rag.utils.fallback_handler - User Fallback Message: Error during similarity check.
+2025-05-14 00:59:31,535 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Low Similarity Score triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse', 'top_score': 0.5430352364161461}
+2025-05-14 00:59:31,537 - INFO - rag.utils.fallback_handler - User Fallback Message: Low similarity score. Skipping RAG.
+2025-05-14 00:59:31,537 - ERROR - rag.utils.fallback_handler - [FallbackHandler] Vector Search Failure triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse'} | Error: object bool can't be used in 'await' expression
+Traceback (most recent call last):
+  File "c:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\test.py", line 33, in is_query_relevant
+    return await FallbackHandler.handle(
+TypeError: object bool can't be used in 'await' expression
+2025-05-14 00:59:31,538 - INFO - rag.utils.fallback_handler - User Fallback Message: Error during similarity check.
+2025-05-14 01:00:36,423 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Low Similarity Score triggered. | Context: {'query': 'There is the gut-wrenching loneliness and near-constant anxiety and then there is the checking out, the feeling nothing at all, the numbness. Sometimes I don’t know which is worse', 'top_score': 0.5430352364161461}
+2025-05-14 01:00:36,426 - INFO - rag.utils.fallback_handler - User Fallback Message: Low similarity score. Skipping RAG.
+2025-06-25 10:42:45,299 - ERROR - rag.utils.fallback_handler - [FallbackHandler] Query Expansion Failure triggered. | Context: {'original_query': 'You', 'user_id': 'amil', 'session_id': 'ed3acb61-2731-4c3a-99b6-492d9d986b7f', 'illness': None} | Error: no healthy upstream
+NoneType: None
+2025-06-25 10:42:45,304 - INFO - rag.utils.fallback_handler - User Fallback Message: Couldn't expand the query. Proceeding with your original query.
+2025-06-25 10:42:57,757 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-06-25 10:42:57,759 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.
+2025-06-25 10:51:02,175 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-06-25 10:51:02,178 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.
+2025-07-03 09:51:11,721 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-07-03 09:51:11,729 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.
+2025-07-03 10:04:55,995 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-07-03 10:04:55,998 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.
+2025-07-05 18:07:01,752 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-07-05 18:07:01,755 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.
+2025-07-05 18:08:34,403 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-07-05 18:08:34,404 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.
+2025-07-05 19:27:07,415 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-07-05 19:27:07,418 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.
+2025-07-05 19:57:25,385 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-07-05 19:57:25,387 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.
+2025-07-05 19:59:27,279 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-07-05 19:59:27,280 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.
+2025-07-05 20:01:23,814 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-07-05 20:01:23,822 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.
+2025-07-11 15:17:03,074 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-07-11 15:17:03,076 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.
+2025-08-27 20:29:59,493 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Low Similarity Score triggered. | Context: {'top_score': 0.669529914855957}
+2025-08-27 20:29:59,497 - INFO - rag.utils.fallback_handler - User Fallback Message: The documents found weren’t relevant enough.
+2025-08-27 20:52:30,990 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Low Similarity Score triggered. | Context: {'top_score': 0.604649073162619}
+2025-08-27 20:52:30,992 - INFO - rag.utils.fallback_handler - User Fallback Message: The documents found weren’t relevant enough.
+2025-10-13 06:24:02,096 - ERROR - rag.utils.fallback_handler - [FallbackHandler] Query Expansion Failure triggered. | Context: {'original_query': "Oh my God! Hey, hi! I'm a little sorry, I couldn't do that. Let me down one ex-money mirror.", 'user_id': 'amil', 'session_id': 'e6db1217-93ee-463b-8067-9440283244b6', 'illness': None} | Error: Error code: 400 - {'error': {'message': 'The model `llama3-70b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}
+NoneType: None
+2025-10-13 06:24:02,160 - INFO - rag.utils.fallback_handler - User Fallback Message: Couldn't expand the query. Proceeding with your original query.
+2025-10-13 06:24:32,870 - WARNING - rag.utils.fallback_handler - [FallbackHandler] Empty Similarity Result triggered.
+2025-10-13 06:24:32,872 - INFO - rag.utils.fallback_handler - User Fallback Message: No similar documents found.

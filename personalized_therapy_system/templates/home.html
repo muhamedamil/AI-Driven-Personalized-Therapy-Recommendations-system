@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Home - Talk to Companion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f3f7f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 3rem 2rem;
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #2e5e5e;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      background-color: #4d7c7c;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #3a6363;
+    }
+
+    #session-info {
+      margin-top: 1.5rem;
+      color: #374949;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      background-color: #eef6f6;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    #confirm-dialog {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      z-index: 1000;
+    }
+
+    #confirm-dialog p {
+      margin-bottom: 1.5rem;
+      color: #2e5e5e;
+      font-size: 1.1rem;
+    }
+
+    #confirm-dialog button {
+      background-color: #4d7c7c;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      margin: 0 0.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #confirm-dialog button:hover {
+      background-color: #3a6363;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Your Companion</h1>
+    <button id="talk-btn">Talk to Your Companion</button>
+
+    <div id="session-info"></div>
+  </div>
+
+  <div id="confirm-dialog">
+    <p>Do you want to continue your previous session?</p>
+    <button id="btn-yes">Yes</button>
+    <button id="btn-no">No</button>
+  </div>
+
+  <script>
+    const talkBtn = document.getElementById('talk-btn');
+    const confirmDialog = document.getElementById('confirm-dialog');
+    const btnYes = document.getElementById('btn-yes');
+    const btnNo = document.getElementById('btn-no');
+    const sessionInfo = document.getElementById('session-info');
+
+    talkBtn.addEventListener('click', () => {
+      confirmDialog.style.display = 'block';
+    });
+
+    async function handleChoice(choice) {
+      confirmDialog.style.display = 'none';
+
+      try {
+        const formData = new FormData();
+        formData.append('choice', choice);
+
+        const response = await fetch('/home/session-handler', {
+          method: 'POST',
+          body: formData,
+          headers: { 'X-Requested-With': 'XMLHttpRequest' }
+        });
+
+        if (!response.ok) {
+          const err = await response.json();
+          sessionInfo.textContent = `Error: ${err.detail}`;
+          return;
+        }
+
+        const data = await response.json();
+        sessionInfo.innerHTML = `
+          <strong>Session ID:</strong> ${data.session_id}<br/>
+          <strong>Username:</strong> ${data.user_name}<br/>
+          <strong>Session Created:</strong> ${new Date(data.session_created).toLocaleString()}
+        `;
+
+        setTimeout(() => {
+          window.location.href = data.redirect_url;
+        }, 1000);
+      } catch (error) {
+        sessionInfo.textContent = 'Network error or server unreachable.';
+      }
+    }
+
+    btnYes.addEventListener('click', () => handleChoice('continue'));
+    btnNo.addEventListener('click', () => handleChoice('new'));
+  </script>
+</body>
+</html>

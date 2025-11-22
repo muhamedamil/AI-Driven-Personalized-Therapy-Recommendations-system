@@ -1,0 +1,8 @@
+2025-07-11 10:28:54,931 - INFO - [Classifier] Query classified as: RAG=NO_RAG, VAGUE=CLEAR
+2025-07-11 14:17:35,657 - INFO - [Classifier] Query classified as: RAG=NO_RAG, VAGUE=VAGUE
+2025-07-11 14:52:59,310 - INFO - [Classifier] Query classified as: RAG=NO_RAG, VAGUE=VAGUE
+2025-07-11 15:16:56,231 - INFO - [Classifier] Query classified as: RAG=NO_RAG, VAGUE=VAGUE
+2025-08-27 20:29:04,046 - INFO - [Classifier] Query classified as: RAG=NO_RAG, VAGUE=CLEAR
+2025-08-27 20:29:53,460 - INFO - [Classifier] Query classified as: RAG=NO_RAG, VAGUE=VAGUE
+2025-08-27 20:52:24,886 - INFO - [Classifier] Query classified as: RAG=NO_RAG, VAGUE=VAGUE
+2025-10-13 06:23:57,170 - INFO - [Classifier] Query classified as: RAG=NO_RAG, VAGUE=VAGUE

@@ -1,0 +1,43 @@
+{
+  "os":  "Windows-10-10.0.26100-SP0",
+  "python":  "CPython 3.10.16",
+  "startedAt":  "2025-08-27T15:22:14.247509Z",
+  "args":  [
+    "main:app",
+    "--port",
+    "7000"
+  ],
+  "program":  "-m __main__",
+  "git":  {
+    "remote":  "https://github.com/amil122/AI-Driven-Personalized-Therapy-Recommendations-system.git",
+    "commit":  "9c4e58fa70c488de1b0eb324e4c3ad0b7a3d54d3"
+  },
+  "email":  "amilasnils008@gmail.com",
+  "root":  "C:\\Users\\amil\\OneDrive\\Documents\\AI-Driven Personalized Therapy Recommendations system\\personalized_therapy_system",
+  "host":  "Muhamedamil1",
+  "executable":  "C:\\Users\\amil\\anaconda3\\envs\\main_module_env\\python.exe",
+  "cpu_count":  12,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA GeForce RTX 3050 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "487463055360",
+      "used":  "416599904256"
+    }
+  },
+  "memory":  {
+    "total":  "8259358720"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 3050 Laptop GPU",
+      "memoryTotal":  "4294967296",
+      "cudaCores":  2048,
+      "architecture":  "Ampere",
+      "uuid":  "GPU-530ab506-57e4-a5a6-74b2-ed8cde74a405"
+    }
+  ],
+  "cudaVersion":  "12.7",
+  "writerId":  "u62ydend0bvvjtpnrrotfja2pykd7cdv"
+}

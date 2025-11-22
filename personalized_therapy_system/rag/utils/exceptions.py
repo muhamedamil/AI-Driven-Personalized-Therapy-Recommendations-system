@@ -1,0 +1,2 @@
+class VectorStoreInitializationError(Exception):
+    pass

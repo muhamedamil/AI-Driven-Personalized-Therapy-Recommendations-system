@@ -1,0 +1,96 @@
+# === FastAPI core ===
+fastapi==0.115.1
+uvicorn==0.34.0
+gunicorn==23.0.0
+itsdangerous>=2.0
+email-validator
+pydantic[email]
+
+
+# === DB & Vector Store ===
+asyncpg==0.30.0
+psycopg2-binary==2.9.10
+langchain-postgres==0.0.14
+pgvector==0.3.5
+sqlalchemy
+
+# === LangChain + Embeddings ===
+langchain==0.3.26
+langchain-community==0.3.26
+langchain-core==0.3.68
+langchain-huggingface==0.2.0
+langchain-text-splitters==0.3.8
+langsmith==0.4.3  # ✅ compatible with all above
+langgraph==0.5.1
+groq==0.24.0
+langchain_groq
+openai
+
+# === Embeddings
+sentence-transformers==4.0.2
+transformers==4.50.3
+huggingface-hub==0.31.2
+
+
+# === NLP ===
+spacy==3.8.5
+torch==2.5.1
+torchvision==0.20.1
+torchaudio==2.5.1
+
+# === Audio (STT/TTS) ===
+faster-whisper==1.1.1
+ffmpeg-python==0.2.0
+sounddevice==0.5.1
+soundfile==0.13.1
+pydub==0.25.1
+soundfile==0.13.1
+kokoro==0.9.4
+
+
+# === Other ===
+pydantic==2.11.2
+python-dotenv==1.1.0
+requests==2.32.3
+aiohttp==3.11.16
+python-multipart  
+passlib==1.7.4
+pathlib==1.0.1
+pydantic_core==2.33.1
+webrtcvad
+Unidecode==1.3.8
+types-python-dateutil==2.9.0.20241206
+typing-inspect==0.9.0
+pyparsing==3.2.3
+huggingface-hub==0.31.2
+jsonschema==4.23.0
+jsonschema-specifications==2025.4.1
+kiwisolver==1.4.8
+python-dateutil==2.9.0.post0
+async-timeout==4.0.3
+wandb
+
+
+# === Optional: Logging / Utilities ===
+loguru==0.7.3
+
+# === Web ===
+jinja2==3.1.3
+
+# === Security / JWT ===
+passlib[bcrypt]==1.7.4
+bcrypt==4.0.1
+PyJWT
+
+# === OCR & PDF ===
+pytesseract
+PyMuPDF
+PyMuPDF==1.25.5
+pdf2image
+
+
+# === Async utils ===
+aiofiles
+tqdm
+
+

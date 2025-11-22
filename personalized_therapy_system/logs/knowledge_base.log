@@ -1,0 +1,609 @@
+2025-05-02 03:58:47,666 - INFO - Initialized KnowledgeBaseService for collection: test_collection
+2025-05-02 03:58:47,667 - ERROR - The folder C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\Cognitive Behavioral Therapy.pdf does not exist or is not a directory.
+2025-05-02 03:58:47,667 - WARNING - No valid documents found in the folder.
+2025-05-02 11:33:03,073 - INFO - Initialized KnowledgeBaseService for collection: test_collection
+2025-05-02 11:33:03,234 - INFO - Loaded PDF file: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 11:33:03,243 - INFO - Loaded 1 documents from folder: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base
+2025-05-02 11:33:09,161 - INFO - Chunked document into 50 chunks from source: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 11:33:10,473 - INFO - Successfully stored 50 chunks in the vector store.
+2025-05-02 11:33:10,473 - INFO - Document processing completed successfully.
+2025-05-02 13:18:54,348 - INFO - Initialized KnowledgeBaseService for collection: test_collection
+2025-05-02 13:18:54,450 - INFO - Loaded PDF file: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 13:18:54,452 - INFO - Loaded 1 documents from folder: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base
+2025-05-02 13:18:54,815 - INFO - Chunked document into 50 chunks from source: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 13:18:55,807 - ERROR - Error storing documents: Error occurred while adding documents: (psycopg2.errors.DataException) expected 512 dimensions, not 384
+
+[SQL: INSERT INTO langchain_pg_embedding (collection_id, embedding, document, cmetadata, custom_id, uuid) VALUES (%(collection_id__0)s::UUID, %(embedding__0)s, %(document__0)s, %(cmetadata__0)s::JSON, %(custom_id__0)s, %(uuid__0)s::UUID), (%(collection_id_ ... 6295 characters truncated ... %(embedding__49)s, %(document__49)s, %(cmetadata__49)s::JSON, %(custom_id__49)s, %(uuid__49)s::UUID)]
+[parameters: {'collection_id__0': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__0': UUID('69772c7c-fa57-44fd-8697-c2ca25e8ea7f'), 'document__0': 'The Efficacy of Cognitive Behavioral Therapy: A Review of Meta-\nanalyses\nStefan G. Hofmann, Ph.D., Anu Asnaani, M.A., Imke J.J. Vonk, M.A., Alice T ... (1473 characters truncated) ... dditional research is needed to examine the efficacy of\nCBT for randomized-controlled studies. Moreover, except for children and elderly populations', 'embedding__0': '[0.06449824571609497,-0.008923226967453957,0.06001894176006317,0.07105471193790436,-0.015277561731636524,0.024744046851992607,0.01676097884774208,0.1 ... (7741 characters truncated) ... 19357,0.01297232136130333,-0.09233247488737106,-0.0235503651201725,0.05918083339929581,0.03939296677708626,0.013984251767396927,0.005002312362194061]', 'custom_id__0': '6aba6bd3-ff67-4a17-af21-8e38c44a2724', 'cmetadata__0': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__1': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__1': UUID('d89d20ba-f827-4e13-98d1-df24b9936c5a'), 'document__1': ' the efficacy of\nCBT for randomized-controlled studies. Moreover, except for children and elderly populations, no\nmeta-analytic studies of CBT have ... (1377 characters truncated) ...  28.\nPublished in final edited form as:\nCognit Ther Res. 2012 October 1; 36(5): 427–440. doi:10.1007/s10608-012-9476-1.\nNIH-PA Author Manuscript\n', 'embedding__1': '[0.0869000107049942,0.012211582623422146,0.07456070929765701,0.07590985298156738,0.00977318175137043,0.01964854821562767,0.023394662886857986,0.07179 ... (7764 characters truncated) ... 6,-0.021334238350391388,-0.06397433578968048,-0.040641311556100845,0.03744470700621605,0.07336269319057465,0.05211513862013817,-0.029846590012311935]', 'custom_id__1': 'ccbf08b2-d555-48ff-9217-a64704a47778', 'cmetadata__1': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__2': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__2': UUID('1cd1bcbc-8644-4645-adb7-96587599c74d'), 'document__2': 's10608-012-9476-1.\nNIH-PA Author Manuscript\nNIH-PA Author Manuscript\nNIH-PA Author Manuscript\nthe various disorders. Although these disorder-spec ... (1503 characters truncated) ... he\nsearch only covered the period up to 2004, but many reviews have been published since\nthen. In fact, the majority of studies (84%) was published', 'embedding__2': '[0.0069353277795016766,-0.023143943399190903,0.03000342659652233,0.14153259992599487,-0.07156695425510406,0.01780604012310505,0.08227002620697021,-0. ... (7730 characters truncated) ... 44841,0.08576557785272598,-0.07639657706022263,-0.08756090700626373,0.09318013489246368,0.07347793877124786,0.0480012372136116,-0.004755190573632717]', 'custom_id__2': '701ca78c-b04e-405c-be6e-13548322b26b', 'cmetadata__2': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__3': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__3': UUID('a27c3db8-bafd-4216-ac8f-9ee26f717959'), 'document__3': ' reviews have been published since\nthen. In fact, the majority of studies (84%) was published after 2004. The goal of our review\nwas to provide a c ... (1460 characters truncated) ... olleagues (2006). The number of meta-analytic reviews per\nyear is depicted in Figure 2.\nCategorization of Meta-analyses\nThe 269 meta-analyses were', 'embedding__3': '[0.07851118594408035,-0.04847201704978943,0.059864647686481476,0.09285271167755127,-0.01841498538851738,0.0264712106436491,-0.02140769548714161,0.100 ... (7756 characters truncated) ... 1,0.0031138306949287653,-0.09007444977760315,-0.06762508302927017,0.04928620532155037,0.034856945276260376,0.05895307660102844,0.0022186783608049154]', 'custom_id__3': '2f676ae9-1ca3-424a-93db-f8c7be65cb59', 'cmetadata__3': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__4': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__4': UUID('61dcd0b9-fb23-4e88-9233-66a3e2e72490'), 'document__4': ' Figure 2.\nCategorization of Meta-analyses\nThe 269 meta-analyses were categorized into groups to provide the most meaningful and\nextensive examina ... (1488 characters truncated) ... vidence for the efficacy of CBT for cannabis dependence, with evidence for\nhigher efficacy of multi-session CBT versus single session or other brief', 'embedding__4': '[0.0941026508808136,-0.03661038354039192,0.04861140623688698,0.10245809704065323,0.0026527922600507736,0.025971077382564545,0.02037024311721325,0.062 ... (7747 characters truncated) ... 85,-0.014824239537119865,-0.07277127355337143,-0.08560489863157272,0.060402534902095795,0.0248408280313015,0.06222476065158844,-0.013986644335091114]', 'custom_id__4': '1925591a-9490-4e83-90a1-0fd6ad986c13', 'cmetadata__4': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__5': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__5': UUID('4bb2d2b9-fd66-4adc-ae3d-651d6faafc61'), 'document__5': ' dependence, with evidence for\nhigher efficacy of multi-session CBT versus single session or other briefer interventions, and\na lower drop out rate ... (1430 characters truncated) ... ders\nMeta-analyses examining the efficacy of psychological treatments for schizophrenia\nrevealed a beneficial effect of CBT on positive symptoms (i', 'embedding__5': '[0.09086426347494125,0.04126714915037155,0.04403286427259445,0.09869160503149033,0.001476013450883329,-0.0018159834435209632,-0.005028514191508293,0. ... (7731 characters truncated) ... 04,0.01925853081047535,-0.025036290287971497,-0.07597801089286804,0.02470008283853531,0.026100333780050278,0.059825506061315536,-0.01726188324391842]', 'custom_id__5': '11c7d3a4-d3c0-461f-9647-71b93f6986a0', 'cmetadata__5': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__6': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__6': UUID('a60e9c49-b830-4ae5-928d-61a3c26f642e'), 'document__6': ' efficacy of psychological treatments for schizophrenia\nrevealed a beneficial effect of CBT on positive symptoms (i.e., delusions and/or\nhallucinat ... (1357 characters truncated) ... depression was more effective than control conditions such as waiting list or no\ntreatment, with a medium effect size (van Straten, Geraedts, Verdon', 'embedding__6': '[0.005526417400687933,-0.021101877093315125,0.05791221931576729,0.055704303085803986,0.02621414139866829,0.04361969232559204,0.03924354538321495,0.02 ... (7764 characters truncated) ... ,-0.03012518770992756,-0.012593076564371586,-0.032959744334220886,0.036889150738716125,0.07476744800806046,0.06725271791219711,-0.017231334000825882]', 'custom_id__6': '0a9b2f8e-bee3-4ee3-98a9-975ed4d31e56', 'cmetadata__6': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__7': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__7': UUID('ec1a09f8-3d72-4bc2-b17e-4d8e72636558'), 'document__7': ' no\ntreatment, with a medium effect size (van Straten, Geraedts, Verdonck-de Leeuw,\nAndersson, & Cuijpers, 2010; Beltman, Oude Voshaar, & Speckens, ... (1180 characters truncated) ... erapy could be a useful addition to CBT; specifically, combination therapy of\nCBT with pharmacotherapy was more effective in comparison to CBT alone', 'embedding__7': '[0.07148202508687973,0.04780188947916031,0.05082737281918526,0.0861162394285202,-0.05302412807941437,0.000628338661044836,-0.01641298271715641,0.0434 ... (7768 characters truncated) ... 6,0.02150445617735386,-0.04031956195831299,-0.011235881596803665,0.024951908737421036,-0.004289004951715469,0.11039415001869202,0.025399943813681602]', 'custom_id__7': 'd5a52caa-05e7-49a6-af39-a25f239fb27c', 'cmetadata__7': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__8': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__8': UUID('be935a08-85bd-44ee-9b14-1e424d51189d') ... 200 parameters truncated ... 'custom_id__41': 'a5d39f5f-9291-4183-a6f4-635b13739ded', 'cmetadata__41': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__42': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__42': UUID('021aabe3-7684-463f-80f9-f833e778af3d'), 'document__42': '–295. [PubMed: 18321470]\nReas DL, Grilo CM. Review and meta-analysis of pharmacotherapy for binge-eating disorder. Obesity.\n2008; 16(9):2024–2038.  ... (980 characters truncated) ... D001442.\nRuhmland M, Margraf J. Effektivität psychologischer Therapien von spezifischer Phobie und\nZwangsstörung: Meta-Analysen auf Störungsebene /', 'embedding__42': '[0.0012551220133900642,-0.08371318876743317,-0.010293835774064064,0.06537409126758575,0.041619546711444855,0.09027046710252762,0.024921216070652008,- ... (7767 characters truncated) ... 03531,0.016236864030361176,-0.06546562165021896,-0.0654810294508934,0.1340198665857315,0.047226279973983765,0.00794845912605524,-0.02472786046564579]', 'custom_id__42': 'e8a9109f-bac7-4c84-818a-b2f1efe49f93', 'cmetadata__42': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__43': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__43': UUID('df250271-93bc-4dd1-8091-8fcee2d2825a'), 'document__43': 'wangsstörung: Meta-Analysen auf Störungsebene / Efficacy of psychological treatments for\nspecific phobia and obsessive compulsive disorder. Verhalte ... (1068 characters truncated) ... 2]\nSockol LE, Epperson CN, Barber JP. A meta-analysis of treatments for perinatal depression. Clinical\nPsychology Review. 2011; 31:839–849. [PubMed', 'embedding__43': '[-0.006733920890837908,-0.060073964297771454,-0.011339073069393635,0.11810239404439926,0.020349901169538498,-0.0025764727033674717,0.0377341024577617 ... (7765 characters truncated) ... 696,0.010195543058216572,-0.065180204808712,-0.03222707286477089,0.0808807983994484,0.025572050362825394,-0.0019618787337094545,0.020174281671643257]', 'custom_id__43': '108d2056-1370-4d79-ac36-56767e610a99', 'cmetadata__43': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__44': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__44': UUID('21037314-7ca5-4b5c-a47c-37d20d725852'), 'document__44': '. Clinical\nPsychology Review. 2011; 31:839–849. [PubMed: 21545782]\nSong F, Huttunen-Lenz M, Holland R. Effectiveness of complex psycho-educational  ... (1034 characters truncated) ... comparing\ndifferent behavioral treatments for late-life anxiety. The American Journal of Geriatric\nPsychiatry. 2009; 17:105–115. [PubMed: 19155744]', 'embedding__44': '[0.0018308275612071157,0.021161755546927452,0.006409785710275173,0.057549942284822464,0.005345614161342382,0.006297093816101551,-0.00809613335877657, ... (7742 characters truncated) ... 0.032751113176345825,-0.05822606012225151,-0.04104224964976311,0.10493189096450806,0.08237284421920776,-0.0021551777608692646,-0.0032325556967407465]', 'custom_id__44': '5970b81a-828d-4026-a221-0b47406d527d', 'cmetadata__44': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__45': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__45': UUID('6c499c27-5a14-42f9-8328-7cc6bc355967'), 'document__45': 'Psychiatry. 2009; 17:105–115. [PubMed: 19155744]\nTolin DF. Is cognitive-behavioral therapy more effective than other therapies? A meta-analytic revi ... (1026 characters truncated) ... ffectiveness of psychological and pharmacological treatments for binge eating disorder. The\nInternational Journal of Eating Disorders. 2010; 43:205–', 'embedding__45': '[0.032280582934617996,0.04618744179606438,0.046269405633211136,0.09369128942489624,0.04594680294394493,0.06460078060626984,0.02889290824532509,0.0348 ... (7728 characters truncated) ... 79,-0.013429802842438221,-0.11199881136417389,-0.04831302538514137,0.06336361169815063,0.005368136800825596,0.03782593831419945,0.024729879572987556]', 'custom_id__45': '667e9587-9fa0-4255-a83a-9f4f989914a6', 'cmetadata__45': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__46': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__46': UUID('70bce745-0a04-4257-924a-5cb400a902c7'), 'document__46': ' treatments for binge eating disorder. The\nInternational Journal of Eating Disorders. 2010; 43:205–217. [PubMed: 19402028]\nVos T, Haby MM, Barendre ... (1054 characters truncated) ... inical models, and methodological rigor. Schizophrenia Bulletin. 2008; 34(3):523–537.\n[PubMed: 17962231]\nZimmermann G, Favrod J, Trieu VH, Pomini V', 'embedding__46': '[0.03509439155459404,-0.017498699948191643,0.06387748569250107,0.007599227130413055,0.0433407761156559,0.015459808520972729,-0.025563925504684448,-0. ... (7747 characters truncated) ... 35,0.08436013013124466,-0.00016670124023221433,-0.0226910300552845,0.1557556390762329,-0.008924520574510098,0.04465813934803009,-0.06426795572042465]', 'custom_id__46': '971881d8-6013-4df7-8426-81b477de1b56', 'cmetadata__46': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__47': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__47': UUID('a7fa7a4d-4011-4e57-9112-d5aad5206ab0'), 'document__47': ']\nZimmermann G, Favrod J, Trieu VH, Pomini V. The effect of cognitive behavioral treatment on the\npositive symptoms of schizophrenia spectrum disor ... (1064 characters truncated) ... t\nNIH-PA Author Manuscript\nNIH-PA Author Manuscript\nNIH-PA Author Manuscript\nNIH-PA Author Manuscript\nNIH-PA Author Manuscript\nHofmann et al.\n', 'embedding__47': '[0.09830508381128311,-0.0212616678327322,-0.036264341324567795,0.012993605807423592,0.010264293290674686,0.023292236030101776,0.10576191544532776,0.0 ... (7757 characters truncated) ... 985,0.031044578179717064,-0.04745817556977272,0.015972813591361046,0.05274813994765282,0.03765992447733879,-0.04469429329037666,-0.09705023467540741]', 'custom_id__47': 'ec9504d1-06b6-4759-8e75-00e19826462f', 'cmetadata__47': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__48': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__48': UUID('d5fbc6a7-c2f1-4d35-a392-7d9f8c1f1c15'), 'document__48': "PA Author Manuscript\nNIH-PA Author Manuscript\nHofmann et al.\nPage 21\nTable 1\nPooled meta-analytic response rates for CBT versus other conditions ... (612 characters truncated) ... & Leibing (2003)\n25\n47%3\n-\n59%4\n-\n-\n-\nCBT<OT\nGeneralized Anxiety\nDisorder\nHunot et al. (2007)\n8\n46%5\n-\n-\n-\n14%\n14%\nCBT=OT;\nCBT>TA", 'embedding__48': '[4.6157783799571916e-05,-0.012209145352244377,0.024437308311462402,0.11836787313222885,-0.015576409175992012,-0.01687726378440857,0.02710508555173874 ... (7756 characters truncated) ... 84924,0.03712238743901253,-0.05951963737607002,-0.05606036260724068,0.022038331255316734,0.07978341728448868,0.05061949044466019,-0.0062915263697505]', 'custom_id__48': '0ad7e27a-1685-4a78-b23f-46148d2f8ae4', 'cmetadata__48': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}', 'collection_id__49': UUID('4f22c26c-fc07-4382-a4ec-88fd236482c4'), 'uuid__49': UUID('57333ad4-1dbb-475e-a10f-e5c472fb499c'), 'document__49': '-\n-\n14%\n14%\nCBT=OT;\nCBT>TAU,WL\nChronic Fatigue\nPrice et al. (2008)\n6\n40%\n-\n-\n-\n26%\n-\nCBT>TAU\nBulimia Nervosa\nThompson-Brenner (2003) ... (955 characters truncated) ...  in paper; stated as being equal to CBT (as indicated in comparison column)\nCognit Ther Res. Author manuscript; available in PMC 2013 February 28.\n', 'embedding__49': '[0.04350581020116806,-0.02802233397960663,0.01910497061908245,0.10507551580667496,-0.016389939934015274,0.016114836558699608,-0.005140992347151041,0. ... (7761 characters truncated) ... 0.008947975933551788,-0.05615973845124245,-0.10309021174907684,0.12858539819717407,-0.0019299050327390432,-0.0005917312228120863,0.04086580500006676]', 'custom_id__49': '481d3ad5-ddac-4b8e-9145-8a6d77308439', 'cmetadata__49': '{"source": "C:\\\\Users\\\\amil\\\\OneDrive\\\\Documents\\\\AI-Driven Personalized Therapy Recommendations system\\\\Modul_4 (main module)\\\\knowledge_base\\\\Cognitive Behavioral Therapy.pdf"}'}]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2025-05-02 13:21:47,111 - INFO - Initialized KnowledgeBaseService for collection: test_collection
+2025-05-02 13:21:47,196 - INFO - Loaded PDF file: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 13:21:47,203 - INFO - Loaded 1 documents from folder: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base
+2025-05-02 13:21:47,428 - INFO - Chunked document into 50 chunks from source: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 13:21:49,544 - INFO - Successfully stored 50 chunks in the vector store.
+2025-05-02 13:21:49,554 - INFO - Document processing completed successfully.
+2025-05-02 13:28:27,436 - INFO - Initialized KnowledgeBaseService for collection: test_collection
+2025-05-02 13:28:27,516 - INFO - Loaded PDF file: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 13:28:27,521 - INFO - Loaded 1 documents from folder: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base
+2025-05-02 13:28:27,826 - INFO - Chunked document into 50 chunks from source: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 13:28:28,834 - INFO - Successfully stored 50 chunks in the vector store.
+2025-05-02 13:28:28,834 - INFO - Document processing completed successfully.
+2025-05-02 13:29:39,873 - INFO - Initialized KnowledgeBaseService for collection: test_collection
+2025-05-02 13:29:40,481 - INFO - Loaded PDF file: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 13:29:40,533 - INFO - Loaded 1 documents from folder: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base
+2025-05-02 13:29:41,023 - INFO - Chunked document into 50 chunks from source: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 13:29:41,957 - INFO - Successfully stored 50 chunks in the vector store.
+2025-05-02 13:29:41,957 - INFO - Document processing completed successfully.
+2025-05-02 13:31:00,219 - INFO - Initialized KnowledgeBaseService for collection: test_collection
+2025-05-02 13:31:00,904 - INFO - Loaded PDF file: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 13:31:01,034 - INFO - Loaded 1 documents from folder: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base
+2025-05-02 13:31:01,976 - INFO - Chunked document into 50 chunks from source: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 13:31:11,836 - INFO - Successfully stored 50 chunks in the vector store.
+2025-05-02 13:31:11,836 - INFO - Document processing completed successfully.
+2025-05-02 16:38:23,280 - INFO - Initialized KnowledgeBaseService for collection: test_collection
+2025-05-02 16:38:23,359 - INFO - Loaded PDF file: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 16:38:23,360 - INFO - Loaded 1 documents from folder: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base
+2025-05-02 16:38:23,602 - INFO - Chunked document into 50 chunks from source: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\Modul_4 (main module)\knowledge_base\Cognitive Behavioral Therapy.pdf
+2025-05-02 16:38:25,295 - INFO - Successfully stored 50 chunks in the vector store.
+2025-05-02 16:38:25,295 - INFO - Document processing completed successfully.
+2025-05-02 19:04:46,034 - INFO - Initialized KnowledgeBaseService for collection: psychology_knowledge_base
+2025-05-02 19:04:46,145 - INFO - Loaded PDF file: knowledge_base\ADHD.pdf
+2025-05-02 19:04:46,206 - INFO - Loaded PDF file: knowledge_base\ADHD_01.pdf
+2025-05-02 19:04:46,799 - WARNING - PDF file is empty: knowledge_base\Anxeity.pdf
+2025-05-02 19:04:46,810 - INFO - Loaded PDF file: knowledge_base\BDD.pdf
+2025-05-02 19:04:46,905 - WARNING - PDF file is empty: knowledge_base\BDD_01.pdf
+2025-05-02 19:04:46,930 - INFO - Loaded PDF file: knowledge_base\BDD_02.pdf
+2025-05-02 19:04:47,019 - WARNING - PDF file is empty: knowledge_base\bipolar.pdf
+2025-05-02 19:04:47,076 - WARNING - PDF file is empty: knowledge_base\bipolar_01.pdf
+2025-05-02 19:04:47,884 - WARNING - PDF file is empty: knowledge_base\bipolar_02.pdf
+2025-05-02 19:04:47,894 - INFO - Loaded PDF file: knowledge_base\BPD.pdf
+2025-05-02 19:04:48,372 - WARNING - PDF file is empty: knowledge_base\BPD_01.pdf
+2025-05-02 19:04:49,168 - WARNING - PDF file is empty: knowledge_base\BPD_03.pdf
+2025-05-02 19:04:49,572 - WARNING - PDF file is empty: knowledge_base\depression.pdf
+2025-05-02 19:04:49,973 - WARNING - PDF file is empty: knowledge_base\depression_02.pdf
+2025-05-02 19:04:50,127 - WARNING - PDF file is empty: knowledge_base\Eating Disorder.pdf
+2025-05-02 19:04:50,184 - INFO - Loaded PDF file: knowledge_base\Eating Disorder_01.pdf
+2025-05-02 19:04:50,756 - WARNING - PDF file is empty: knowledge_base\Eating Disorder_02.pdf
+2025-05-02 19:04:50,770 - INFO - Loaded PDF file: knowledge_base\GAD.pdf
+2025-05-02 19:04:51,519 - WARNING - PDF file is empty: knowledge_base\GAD_01.pdf
+2025-05-02 19:04:51,532 - INFO - Loaded PDF file: knowledge_base\Hoarding Disorder.pdf
+2025-05-02 19:04:51,545 - INFO - Loaded PDF file: knowledge_base\Hoarding Disorder_01.pdf
+2025-05-02 19:04:51,636 - WARNING - PDF file is empty: knowledge_base\Hoarding Disorder_02.pdf
+2025-05-02 19:04:51,732 - WARNING - PDF file is empty: knowledge_base\OCD.pdf
+2025-05-02 19:04:52,223 - WARNING - PDF file is empty: knowledge_base\OCD_01.pdf
+2025-05-02 19:04:52,275 - WARNING - PDF file is empty: knowledge_base\Panic Disorder.pdf
+2025-05-02 19:04:52,310 - WARNING - PDF file is empty: knowledge_base\Panic Disorder_01.pdf
+2025-05-02 19:04:52,824 - WARNING - PDF file is empty: knowledge_base\Panic Disorder_02.pdf
+2025-05-02 19:04:52,887 - WARNING - PDF file is empty: knowledge_base\Personality Disorder.pdf
+2025-05-02 19:04:52,902 - INFO - Loaded PDF file: knowledge_base\Personality Disorder_01.pdf
+2025-05-02 19:04:53,523 - WARNING - PDF file is empty: knowledge_base\Personality Disorder_02.pdf
+2025-05-02 19:04:53,609 - WARNING - PDF file is empty: knowledge_base\PTSD.pdf
+2025-05-02 19:04:53,691 - WARNING - PDF file is empty: knowledge_base\PTSD_01.pdf
+2025-05-02 19:04:53,850 - WARNING - PDF file is empty: knowledge_base\PTSD_02.pdf
+2025-05-02 19:04:53,937 - WARNING - PDF file is empty: knowledge_base\Schizophrenia.pdf
+2025-05-02 19:04:53,963 - INFO - Loaded PDF file: knowledge_base\Schizophrenia_01.pdf
+2025-05-02 19:04:54,055 - INFO - Loaded PDF file: knowledge_base\Schizophrenia_02.pdf
+2025-05-02 19:04:54,240 - WARNING - PDF file is empty: knowledge_base\Social Anxiety.pdf
+2025-05-02 19:04:55,006 - WARNING - PDF file is empty: knowledge_base\Social Anxiety_01.pdf
+2025-05-02 19:04:55,212 - WARNING - PDF file is empty: knowledge_base\Stress.pdf
+2025-05-02 19:04:55,576 - WARNING - PDF file is empty: knowledge_base\Stress_01.pdf
+2025-05-02 19:04:55,576 - INFO - Loaded 12 documents from folder: knowledge_base
+2025-05-02 19:04:56,221 - INFO - Chunked document into 12 chunks from source: knowledge_base\ADHD.pdf
+2025-05-02 19:04:56,240 - INFO - Chunked document into 45 chunks from source: knowledge_base\ADHD_01.pdf
+2025-05-02 19:04:56,242 - INFO - Chunked document into 5 chunks from source: knowledge_base\BDD.pdf
+2025-05-02 19:04:56,253 - INFO - Chunked document into 29 chunks from source: knowledge_base\BDD_02.pdf
+2025-05-02 19:04:56,255 - INFO - Chunked document into 4 chunks from source: knowledge_base\BPD.pdf
+2025-05-02 19:04:56,274 - INFO - Chunked document into 70 chunks from source: knowledge_base\Eating Disorder_01.pdf
+2025-05-02 19:04:56,276 - INFO - Chunked document into 8 chunks from source: knowledge_base\GAD.pdf
+2025-05-02 19:04:56,279 - INFO - Chunked document into 4 chunks from source: knowledge_base\Hoarding Disorder.pdf
+2025-05-02 19:04:56,281 - INFO - Chunked document into 10 chunks from source: knowledge_base\Hoarding Disorder_01.pdf
+2025-05-02 19:04:56,283 - INFO - Chunked document into 4 chunks from source: knowledge_base\Personality Disorder_01.pdf
+2025-05-02 19:04:56,285 - INFO - Chunked document into 6 chunks from source: knowledge_base\Schizophrenia_01.pdf
+2025-05-02 19:04:56,290 - INFO - Chunked document into 14 chunks from source: knowledge_base\Schizophrenia_02.pdf
+2025-05-02 19:05:03,013 - INFO - Successfully stored 211 chunks in the vector store.
+2025-05-02 19:05:03,013 - INFO - Document processing completed successfully.
+2025-05-02 19:06:33,574 - INFO - Initialized KnowledgeBaseService for collection: psychology_knowledge_base
+2025-05-02 19:06:33,671 - INFO - Loaded PDF file: knowledge_base\ADHD.pdf
+2025-05-02 19:06:33,743 - INFO - Loaded PDF file: knowledge_base\ADHD_01.pdf
+2025-05-02 19:06:34,520 - WARNING - PDF file is empty: knowledge_base\Anxeity.pdf
+2025-05-02 19:06:34,540 - INFO - Loaded PDF file: knowledge_base\BDD.pdf
+2025-05-02 19:06:34,659 - WARNING - PDF file is empty: knowledge_base\BDD_01.pdf
+2025-05-02 19:06:34,686 - INFO - Loaded PDF file: knowledge_base\BDD_02.pdf
+2025-05-02 19:06:34,784 - WARNING - PDF file is empty: knowledge_base\bipolar.pdf
+2025-05-02 19:06:34,851 - WARNING - PDF file is empty: knowledge_base\bipolar_01.pdf
+2025-05-02 19:06:35,658 - WARNING - PDF file is empty: knowledge_base\bipolar_02.pdf
+2025-05-02 19:06:35,667 - INFO - Loaded PDF file: knowledge_base\BPD.pdf
+2025-05-02 19:06:36,111 - WARNING - PDF file is empty: knowledge_base\BPD_01.pdf
+2025-05-02 19:06:36,585 - WARNING - PDF file is empty: knowledge_base\BPD_03.pdf
+2025-05-02 19:06:37,054 - WARNING - PDF file is empty: knowledge_base\depression.pdf
+2025-05-02 19:06:37,396 - WARNING - PDF file is empty: knowledge_base\depression_02.pdf
+2025-05-02 19:06:37,654 - WARNING - PDF file is empty: knowledge_base\Eating Disorder.pdf
+2025-05-02 19:06:37,714 - INFO - Loaded PDF file: knowledge_base\Eating Disorder_01.pdf
+2025-05-02 19:06:37,866 - WARNING - PDF file is empty: knowledge_base\Eating Disorder_02.pdf
+2025-05-02 19:06:37,880 - INFO - Loaded PDF file: knowledge_base\GAD.pdf
+2025-05-02 19:06:38,525 - WARNING - PDF file is empty: knowledge_base\GAD_01.pdf
+2025-05-02 19:06:38,536 - INFO - Loaded PDF file: knowledge_base\Hoarding Disorder.pdf
+2025-05-02 19:06:38,550 - INFO - Loaded PDF file: knowledge_base\Hoarding Disorder_01.pdf
+2025-05-02 19:06:38,615 - WARNING - PDF file is empty: knowledge_base\Hoarding Disorder_02.pdf
+2025-05-02 19:06:38,828 - WARNING - PDF file is empty: knowledge_base\OCD.pdf
+2025-05-02 19:06:39,363 - WARNING - PDF file is empty: knowledge_base\OCD_01.pdf
+2025-05-02 19:06:39,421 - WARNING - PDF file is empty: knowledge_base\Panic Disorder.pdf
+2025-05-02 19:06:39,477 - WARNING - PDF file is empty: knowledge_base\Panic Disorder_01.pdf
+2025-05-02 19:06:40,085 - WARNING - PDF file is empty: knowledge_base\Panic Disorder_02.pdf
+2025-05-02 19:06:40,136 - WARNING - PDF file is empty: knowledge_base\Personality Disorder.pdf
+2025-05-02 19:06:40,151 - INFO - Loaded PDF file: knowledge_base\Personality Disorder_01.pdf
+2025-05-02 19:06:40,776 - WARNING - PDF file is empty: knowledge_base\Personality Disorder_02.pdf
+2025-05-02 19:06:40,901 - WARNING - PDF file is empty: knowledge_base\PTSD.pdf
+2025-05-02 19:06:40,968 - WARNING - PDF file is empty: knowledge_base\PTSD_01.pdf
+2025-05-02 19:06:41,241 - WARNING - PDF file is empty: knowledge_base\PTSD_02.pdf
+2025-05-02 19:06:41,326 - WARNING - PDF file is empty: knowledge_base\Schizophrenia.pdf
+2025-05-02 19:06:41,333 - INFO - Loaded PDF file: knowledge_base\Schizophrenia_01.pdf
+2025-05-02 19:06:41,354 - INFO - Loaded PDF file: knowledge_base\Schizophrenia_02.pdf
+2025-05-02 19:06:41,415 - WARNING - PDF file is empty: knowledge_base\Social Anxiety.pdf
+2025-05-02 19:06:41,802 - WARNING - PDF file is empty: knowledge_base\Social Anxiety_01.pdf
+2025-05-02 19:06:41,960 - WARNING - PDF file is empty: knowledge_base\Stress.pdf
+2025-05-02 19:06:42,074 - WARNING - PDF file is empty: knowledge_base\Stress_01.pdf
+2025-05-02 19:06:42,075 - INFO - Loaded 12 documents from folder: knowledge_base
+2025-05-02 19:06:42,575 - INFO - Chunked document into 12 chunks from source: knowledge_base\ADHD.pdf
+2025-05-02 19:06:42,586 - INFO - Chunked document into 45 chunks from source: knowledge_base\ADHD_01.pdf
+2025-05-02 19:06:42,588 - INFO - Chunked document into 5 chunks from source: knowledge_base\BDD.pdf
+2025-05-02 19:06:42,597 - INFO - Chunked document into 29 chunks from source: knowledge_base\BDD_02.pdf
+2025-05-02 19:06:42,599 - INFO - Chunked document into 4 chunks from source: knowledge_base\BPD.pdf
+2025-05-02 19:06:42,613 - INFO - Chunked document into 70 chunks from source: knowledge_base\Eating Disorder_01.pdf
+2025-05-02 19:06:42,616 - INFO - Chunked document into 8 chunks from source: knowledge_base\GAD.pdf
+2025-05-02 19:06:42,618 - INFO - Chunked document into 4 chunks from source: knowledge_base\Hoarding Disorder.pdf
+2025-05-02 19:06:42,620 - INFO - Chunked document into 10 chunks from source: knowledge_base\Hoarding Disorder_01.pdf
+2025-05-02 19:06:42,622 - INFO - Chunked document into 4 chunks from source: knowledge_base\Personality Disorder_01.pdf
+2025-05-02 19:06:42,624 - INFO - Chunked document into 6 chunks from source: knowledge_base\Schizophrenia_01.pdf
+2025-05-02 19:06:42,628 - INFO - Chunked document into 14 chunks from source: knowledge_base\Schizophrenia_02.pdf
+2025-05-02 19:06:44,303 - INFO - Successfully stored 211 chunks in the vector store.
+2025-05-02 19:06:44,303 - INFO - Document processing completed successfully.
+2025-05-02 19:21:42,228 - INFO - Initialized KnowledgeBaseService for collection: psychology_knowledge_base
+2025-05-02 19:21:42,369 - INFO - Loaded PDF file (text or OCR): knowledge_base\ADHD.pdf
+2025-05-02 19:21:42,486 - INFO - Loaded PDF file (text or OCR): knowledge_base\ADHD_01.pdf
+2025-05-02 19:21:43,260 - WARNING - Standard text extraction failed: knowledge_base\Anxeity.pdf. Trying OCR...
+2025-05-02 19:21:43,269 - ERROR - OCR failed for knowledge_base\Anxeity.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:43,270 - WARNING - OCR also found empty content in: knowledge_base\Anxeity.pdf
+2025-05-02 19:21:43,283 - INFO - Loaded PDF file (text or OCR): knowledge_base\BDD.pdf
+2025-05-02 19:21:43,465 - WARNING - Standard text extraction failed: knowledge_base\BDD_01.pdf. Trying OCR...
+2025-05-02 19:21:43,477 - ERROR - OCR failed for knowledge_base\BDD_01.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:43,477 - WARNING - OCR also found empty content in: knowledge_base\BDD_01.pdf
+2025-05-02 19:21:43,519 - INFO - Loaded PDF file (text or OCR): knowledge_base\BDD_02.pdf
+2025-05-02 19:21:43,725 - WARNING - Standard text extraction failed: knowledge_base\bipolar.pdf. Trying OCR...
+2025-05-02 19:21:43,735 - ERROR - OCR failed for knowledge_base\bipolar.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:43,736 - WARNING - OCR also found empty content in: knowledge_base\bipolar.pdf
+2025-05-02 19:21:43,847 - WARNING - Standard text extraction failed: knowledge_base\bipolar_01.pdf. Trying OCR...
+2025-05-02 19:21:43,853 - ERROR - OCR failed for knowledge_base\bipolar_01.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:43,853 - WARNING - OCR also found empty content in: knowledge_base\bipolar_01.pdf
+2025-05-02 19:21:45,253 - WARNING - Standard text extraction failed: knowledge_base\bipolar_02.pdf. Trying OCR...
+2025-05-02 19:21:45,266 - ERROR - OCR failed for knowledge_base\bipolar_02.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:45,267 - WARNING - OCR also found empty content in: knowledge_base\bipolar_02.pdf
+2025-05-02 19:21:45,301 - INFO - Loaded PDF file (text or OCR): knowledge_base\BPD.pdf
+2025-05-02 19:21:46,078 - WARNING - Standard text extraction failed: knowledge_base\BPD_01.pdf. Trying OCR...
+2025-05-02 19:21:46,085 - ERROR - OCR failed for knowledge_base\BPD_01.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:46,086 - WARNING - OCR also found empty content in: knowledge_base\BPD_01.pdf
+2025-05-02 19:21:46,883 - WARNING - Standard text extraction failed: knowledge_base\BPD_03.pdf. Trying OCR...
+2025-05-02 19:21:46,889 - ERROR - OCR failed for knowledge_base\BPD_03.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:46,890 - WARNING - OCR also found empty content in: knowledge_base\BPD_03.pdf
+2025-05-02 19:21:47,458 - WARNING - Standard text extraction failed: knowledge_base\depression.pdf. Trying OCR...
+2025-05-02 19:21:47,467 - ERROR - OCR failed for knowledge_base\depression.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:47,468 - WARNING - OCR also found empty content in: knowledge_base\depression.pdf
+2025-05-02 19:21:47,900 - WARNING - Standard text extraction failed: knowledge_base\depression_02.pdf. Trying OCR...
+2025-05-02 19:21:47,913 - ERROR - OCR failed for knowledge_base\depression_02.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:47,914 - WARNING - OCR also found empty content in: knowledge_base\depression_02.pdf
+2025-05-02 19:21:48,157 - WARNING - Standard text extraction failed: knowledge_base\Eating Disorder.pdf. Trying OCR...
+2025-05-02 19:21:48,165 - ERROR - OCR failed for knowledge_base\Eating Disorder.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:48,165 - WARNING - OCR also found empty content in: knowledge_base\Eating Disorder.pdf
+2025-05-02 19:21:48,293 - INFO - Loaded PDF file (text or OCR): knowledge_base\Eating Disorder_01.pdf
+2025-05-02 19:21:48,617 - WARNING - Standard text extraction failed: knowledge_base\Eating Disorder_02.pdf. Trying OCR...
+2025-05-02 19:21:48,625 - ERROR - OCR failed for knowledge_base\Eating Disorder_02.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:48,626 - WARNING - OCR also found empty content in: knowledge_base\Eating Disorder_02.pdf
+2025-05-02 19:21:48,654 - INFO - Loaded PDF file (text or OCR): knowledge_base\GAD.pdf
+2025-05-02 19:21:50,135 - WARNING - Standard text extraction failed: knowledge_base\GAD_01.pdf. Trying OCR...
+2025-05-02 19:21:50,144 - ERROR - OCR failed for knowledge_base\GAD_01.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:50,145 - WARNING - OCR also found empty content in: knowledge_base\GAD_01.pdf
+2025-05-02 19:21:50,171 - INFO - Loaded PDF file (text or OCR): knowledge_base\Hoarding Disorder.pdf
+2025-05-02 19:21:50,207 - INFO - Loaded PDF file (text or OCR): knowledge_base\Hoarding Disorder_01.pdf
+2025-05-02 19:21:50,380 - WARNING - Standard text extraction failed: knowledge_base\Hoarding Disorder_02.pdf. Trying OCR...
+2025-05-02 19:21:50,388 - ERROR - OCR failed for knowledge_base\Hoarding Disorder_02.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:50,388 - WARNING - OCR also found empty content in: knowledge_base\Hoarding Disorder_02.pdf
+2025-05-02 19:21:50,577 - WARNING - Standard text extraction failed: knowledge_base\OCD.pdf. Trying OCR...
+2025-05-02 19:21:50,588 - ERROR - OCR failed for knowledge_base\OCD.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:50,589 - WARNING - OCR also found empty content in: knowledge_base\OCD.pdf
+2025-05-02 19:21:51,599 - WARNING - Standard text extraction failed: knowledge_base\OCD_01.pdf. Trying OCR...
+2025-05-02 19:21:51,615 - ERROR - OCR failed for knowledge_base\OCD_01.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:51,616 - WARNING - OCR also found empty content in: knowledge_base\OCD_01.pdf
+2025-05-02 19:21:51,720 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder.pdf. Trying OCR...
+2025-05-02 19:21:51,729 - ERROR - OCR failed for knowledge_base\Panic Disorder.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:51,729 - WARNING - OCR also found empty content in: knowledge_base\Panic Disorder.pdf
+2025-05-02 19:21:51,794 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder_01.pdf. Trying OCR...
+2025-05-02 19:21:51,803 - ERROR - OCR failed for knowledge_base\Panic Disorder_01.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:51,803 - WARNING - OCR also found empty content in: knowledge_base\Panic Disorder_01.pdf
+2025-05-02 19:21:52,785 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder_02.pdf. Trying OCR...
+2025-05-02 19:21:52,793 - ERROR - OCR failed for knowledge_base\Panic Disorder_02.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:52,794 - WARNING - OCR also found empty content in: knowledge_base\Panic Disorder_02.pdf
+2025-05-02 19:21:52,881 - WARNING - Standard text extraction failed: knowledge_base\Personality Disorder.pdf. Trying OCR...
+2025-05-02 19:21:52,888 - ERROR - OCR failed for knowledge_base\Personality Disorder.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:52,888 - WARNING - OCR also found empty content in: knowledge_base\Personality Disorder.pdf
+2025-05-02 19:21:52,909 - INFO - Loaded PDF file (text or OCR): knowledge_base\Personality Disorder_01.pdf
+2025-05-02 19:21:53,820 - WARNING - Standard text extraction failed: knowledge_base\Personality Disorder_02.pdf. Trying OCR...
+2025-05-02 19:21:53,829 - ERROR - OCR failed for knowledge_base\Personality Disorder_02.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:53,829 - WARNING - OCR also found empty content in: knowledge_base\Personality Disorder_02.pdf
+2025-05-02 19:21:53,978 - WARNING - Standard text extraction failed: knowledge_base\PTSD.pdf. Trying OCR...
+2025-05-02 19:21:53,984 - ERROR - OCR failed for knowledge_base\PTSD.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:53,985 - WARNING - OCR also found empty content in: knowledge_base\PTSD.pdf
+2025-05-02 19:21:54,095 - WARNING - Standard text extraction failed: knowledge_base\PTSD_01.pdf. Trying OCR...
+2025-05-02 19:21:54,103 - ERROR - OCR failed for knowledge_base\PTSD_01.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:54,103 - WARNING - OCR also found empty content in: knowledge_base\PTSD_01.pdf
+2025-05-02 19:21:54,356 - WARNING - Standard text extraction failed: knowledge_base\PTSD_02.pdf. Trying OCR...
+2025-05-02 19:21:54,362 - ERROR - OCR failed for knowledge_base\PTSD_02.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:54,363 - WARNING - OCR also found empty content in: knowledge_base\PTSD_02.pdf
+2025-05-02 19:21:54,499 - WARNING - Standard text extraction failed: knowledge_base\Schizophrenia.pdf. Trying OCR...
+2025-05-02 19:21:54,508 - ERROR - OCR failed for knowledge_base\Schizophrenia.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:54,508 - WARNING - OCR also found empty content in: knowledge_base\Schizophrenia.pdf
+2025-05-02 19:21:54,537 - INFO - Loaded PDF file (text or OCR): knowledge_base\Schizophrenia_01.pdf
+2025-05-02 19:21:54,627 - INFO - Loaded PDF file (text or OCR): knowledge_base\Schizophrenia_02.pdf
+2025-05-02 19:21:54,743 - WARNING - Standard text extraction failed: knowledge_base\Social Anxiety.pdf. Trying OCR...
+2025-05-02 19:21:54,751 - ERROR - OCR failed for knowledge_base\Social Anxiety.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:54,751 - WARNING - OCR also found empty content in: knowledge_base\Social Anxiety.pdf
+2025-05-02 19:21:55,331 - WARNING - Standard text extraction failed: knowledge_base\Social Anxiety_01.pdf. Trying OCR...
+2025-05-02 19:21:55,340 - ERROR - OCR failed for knowledge_base\Social Anxiety_01.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:55,340 - WARNING - OCR also found empty content in: knowledge_base\Social Anxiety_01.pdf
+2025-05-02 19:21:55,509 - WARNING - Standard text extraction failed: knowledge_base\Stress.pdf. Trying OCR...
+2025-05-02 19:21:55,516 - ERROR - OCR failed for knowledge_base\Stress.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:55,516 - WARNING - OCR also found empty content in: knowledge_base\Stress.pdf
+2025-05-02 19:21:55,744 - WARNING - Standard text extraction failed: knowledge_base\Stress_01.pdf. Trying OCR...
+2025-05-02 19:21:55,752 - ERROR - OCR failed for knowledge_base\Stress_01.pdf: Unable to get page count. Is poppler installed and in PATH?
+2025-05-02 19:21:55,752 - WARNING - OCR also found empty content in: knowledge_base\Stress_01.pdf
+2025-05-02 19:21:55,753 - INFO - Loaded 12 documents from folder: knowledge_base
+2025-05-02 19:21:56,519 - INFO - Chunked document into 12 chunks from source: knowledge_base\ADHD.pdf
+2025-05-02 19:21:56,541 - INFO - Chunked document into 45 chunks from source: knowledge_base\ADHD_01.pdf
+2025-05-02 19:21:56,544 - INFO - Chunked document into 5 chunks from source: knowledge_base\BDD.pdf
+2025-05-02 19:21:56,559 - INFO - Chunked document into 29 chunks from source: knowledge_base\BDD_02.pdf
+2025-05-02 19:21:56,562 - INFO - Chunked document into 4 chunks from source: knowledge_base\BPD.pdf
+2025-05-02 19:21:56,593 - INFO - Chunked document into 70 chunks from source: knowledge_base\Eating Disorder_01.pdf
+2025-05-02 19:21:56,597 - INFO - Chunked document into 8 chunks from source: knowledge_base\GAD.pdf
+2025-05-02 19:21:56,599 - INFO - Chunked document into 4 chunks from source: knowledge_base\Hoarding Disorder.pdf
+2025-05-02 19:21:56,603 - INFO - Chunked document into 10 chunks from source: knowledge_base\Hoarding Disorder_01.pdf
+2025-05-02 19:21:56,610 - INFO - Chunked document into 4 chunks from source: knowledge_base\Personality Disorder_01.pdf
+2025-05-02 19:21:56,613 - INFO - Chunked document into 6 chunks from source: knowledge_base\Schizophrenia_01.pdf
+2025-05-02 19:21:56,621 - INFO - Chunked document into 14 chunks from source: knowledge_base\Schizophrenia_02.pdf
+2025-05-02 19:22:02,129 - INFO - Successfully stored 211 chunks in the vector store.
+2025-05-02 19:22:02,129 - INFO - Document processing completed successfully.
+2025-05-02 20:53:05,233 - INFO - Initialized KnowledgeBaseService for collection: psychology_knowledge_base
+2025-05-02 20:53:05,593 - INFO - Loaded PDF file (text or OCR): knowledge_base\ADHD.pdf
+2025-05-02 20:53:05,953 - INFO - Loaded PDF file (text or OCR): knowledge_base\ADHD_01.pdf
+2025-05-02 20:53:08,184 - WARNING - Standard text extraction failed: knowledge_base\Anxeity.pdf. Trying OCR...
+2025-05-02 20:53:14,623 - ERROR - OCR failed for knowledge_base\Anxeity.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:53:14,665 - WARNING - OCR also found empty content in: knowledge_base\Anxeity.pdf
+2025-05-02 20:53:14,727 - INFO - Loaded PDF file (text or OCR): knowledge_base\BDD.pdf
+2025-05-02 20:53:15,182 - WARNING - Standard text extraction failed: knowledge_base\BDD_01.pdf. Trying OCR...
+2025-05-02 20:53:17,074 - ERROR - OCR failed for knowledge_base\BDD_01.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:53:17,091 - WARNING - OCR also found empty content in: knowledge_base\BDD_01.pdf
+2025-05-02 20:53:17,436 - INFO - Loaded PDF file (text or OCR): knowledge_base\BDD_02.pdf
+2025-05-02 20:53:17,874 - WARNING - Standard text extraction failed: knowledge_base\bipolar.pdf. Trying OCR...
+2025-05-02 20:53:20,666 - ERROR - OCR failed for knowledge_base\bipolar.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:53:20,688 - WARNING - OCR also found empty content in: knowledge_base\bipolar.pdf
+2025-05-02 20:53:21,248 - WARNING - Standard text extraction failed: knowledge_base\bipolar_01.pdf. Trying OCR...
+2025-05-02 20:53:23,266 - ERROR - OCR failed for knowledge_base\bipolar_01.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:53:23,276 - WARNING - OCR also found empty content in: knowledge_base\bipolar_01.pdf
+2025-05-02 20:53:26,301 - WARNING - Standard text extraction failed: knowledge_base\bipolar_02.pdf. Trying OCR...
+2025-05-02 20:53:30,311 - ERROR - OCR failed for knowledge_base\bipolar_02.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:53:30,330 - WARNING - OCR also found empty content in: knowledge_base\bipolar_02.pdf
+2025-05-02 20:53:30,381 - INFO - Loaded PDF file (text or OCR): knowledge_base\BPD.pdf
+2025-05-02 20:53:32,289 - WARNING - Standard text extraction failed: knowledge_base\BPD_01.pdf. Trying OCR...
+2025-05-02 20:53:38,550 - ERROR - OCR failed for knowledge_base\BPD_01.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:53:38,585 - WARNING - OCR also found empty content in: knowledge_base\BPD_01.pdf
+2025-05-02 20:53:40,457 - WARNING - Standard text extraction failed: knowledge_base\BPD_03.pdf. Trying OCR...
+2025-05-02 20:53:45,583 - ERROR - OCR failed for knowledge_base\BPD_03.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:53:45,613 - WARNING - OCR also found empty content in: knowledge_base\BPD_03.pdf
+2025-05-02 20:53:46,795 - WARNING - Standard text extraction failed: knowledge_base\depression.pdf. Trying OCR...
+2025-05-02 20:53:51,967 - ERROR - OCR failed for knowledge_base\depression.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:53:51,998 - WARNING - OCR also found empty content in: knowledge_base\depression.pdf
+2025-05-02 20:53:52,504 - WARNING - Standard text extraction failed: knowledge_base\depression_02.pdf. Trying OCR...
+2025-05-02 20:53:54,991 - ERROR - OCR failed for knowledge_base\depression_02.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:53:54,999 - WARNING - OCR also found empty content in: knowledge_base\depression_02.pdf
+2025-05-02 20:53:55,218 - WARNING - Standard text extraction failed: knowledge_base\Eating Disorder.pdf. Trying OCR...
+2025-05-02 20:53:58,990 - ERROR - OCR failed for knowledge_base\Eating Disorder.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:53:58,999 - WARNING - OCR also found empty content in: knowledge_base\Eating Disorder.pdf
+2025-05-02 20:53:59,114 - INFO - Loaded PDF file (text or OCR): knowledge_base\Eating Disorder_01.pdf
+2025-05-02 20:53:59,534 - WARNING - Standard text extraction failed: knowledge_base\Eating Disorder_02.pdf. Trying OCR...
+2025-05-02 20:54:03,789 - ERROR - OCR failed for knowledge_base\Eating Disorder_02.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:03,817 - WARNING - OCR also found empty content in: knowledge_base\Eating Disorder_02.pdf
+2025-05-02 20:54:03,847 - INFO - Loaded PDF file (text or OCR): knowledge_base\GAD.pdf
+2025-05-02 20:54:05,209 - WARNING - Standard text extraction failed: knowledge_base\GAD_01.pdf. Trying OCR...
+2025-05-02 20:54:09,076 - ERROR - OCR failed for knowledge_base\GAD_01.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:09,085 - WARNING - OCR also found empty content in: knowledge_base\GAD_01.pdf
+2025-05-02 20:54:09,113 - INFO - Loaded PDF file (text or OCR): knowledge_base\Hoarding Disorder.pdf
+2025-05-02 20:54:09,140 - INFO - Loaded PDF file (text or OCR): knowledge_base\Hoarding Disorder_01.pdf
+2025-05-02 20:54:09,279 - WARNING - Standard text extraction failed: knowledge_base\Hoarding Disorder_02.pdf. Trying OCR...
+2025-05-02 20:54:10,307 - ERROR - OCR failed for knowledge_base\Hoarding Disorder_02.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:10,312 - WARNING - OCR also found empty content in: knowledge_base\Hoarding Disorder_02.pdf
+2025-05-02 20:54:10,564 - WARNING - Standard text extraction failed: knowledge_base\OCD.pdf. Trying OCR...
+2025-05-02 20:54:12,511 - ERROR - OCR failed for knowledge_base\OCD.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:12,524 - WARNING - OCR also found empty content in: knowledge_base\OCD.pdf
+2025-05-02 20:54:13,699 - WARNING - Standard text extraction failed: knowledge_base\OCD_01.pdf. Trying OCR...
+2025-05-02 20:54:16,792 - ERROR - OCR failed for knowledge_base\OCD_01.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:16,802 - WARNING - OCR also found empty content in: knowledge_base\OCD_01.pdf
+2025-05-02 20:54:16,924 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder.pdf. Trying OCR...
+2025-05-02 20:54:18,233 - ERROR - OCR failed for knowledge_base\Panic Disorder.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:18,240 - WARNING - OCR also found empty content in: knowledge_base\Panic Disorder.pdf
+2025-05-02 20:54:18,298 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder_01.pdf. Trying OCR...
+2025-05-02 20:54:19,009 - ERROR - OCR failed for knowledge_base\Panic Disorder_01.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:19,012 - WARNING - OCR also found empty content in: knowledge_base\Panic Disorder_01.pdf
+2025-05-02 20:54:20,045 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder_02.pdf. Trying OCR...
+2025-05-02 20:54:23,443 - ERROR - OCR failed for knowledge_base\Panic Disorder_02.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:23,457 - WARNING - OCR also found empty content in: knowledge_base\Panic Disorder_02.pdf
+2025-05-02 20:54:23,670 - WARNING - Standard text extraction failed: knowledge_base\Personality Disorder.pdf. Trying OCR...
+2025-05-02 20:54:24,773 - ERROR - OCR failed for knowledge_base\Personality Disorder.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:24,781 - WARNING - OCR also found empty content in: knowledge_base\Personality Disorder.pdf
+2025-05-02 20:54:24,820 - INFO - Loaded PDF file (text or OCR): knowledge_base\Personality Disorder_01.pdf
+2025-05-02 20:54:26,135 - WARNING - Standard text extraction failed: knowledge_base\Personality Disorder_02.pdf. Trying OCR...
+2025-05-02 20:54:32,767 - ERROR - OCR failed for knowledge_base\Personality Disorder_02.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:32,832 - WARNING - OCR also found empty content in: knowledge_base\Personality Disorder_02.pdf
+2025-05-02 20:54:33,415 - WARNING - Standard text extraction failed: knowledge_base\PTSD.pdf. Trying OCR...
+2025-05-02 20:54:36,101 - ERROR - OCR failed for knowledge_base\PTSD.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:36,122 - WARNING - OCR also found empty content in: knowledge_base\PTSD.pdf
+2025-05-02 20:54:36,358 - WARNING - Standard text extraction failed: knowledge_base\PTSD_01.pdf. Trying OCR...
+2025-05-02 20:54:37,855 - ERROR - OCR failed for knowledge_base\PTSD_01.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:37,863 - WARNING - OCR also found empty content in: knowledge_base\PTSD_01.pdf
+2025-05-02 20:54:38,765 - WARNING - Standard text extraction failed: knowledge_base\PTSD_02.pdf. Trying OCR...
+2025-05-02 20:54:41,975 - ERROR - OCR failed for knowledge_base\PTSD_02.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:41,999 - WARNING - OCR also found empty content in: knowledge_base\PTSD_02.pdf
+2025-05-02 20:54:42,331 - WARNING - Standard text extraction failed: knowledge_base\Schizophrenia.pdf. Trying OCR...
+2025-05-02 20:54:43,901 - ERROR - OCR failed for knowledge_base\Schizophrenia.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:43,910 - WARNING - OCR also found empty content in: knowledge_base\Schizophrenia.pdf
+2025-05-02 20:54:43,924 - INFO - Loaded PDF file (text or OCR): knowledge_base\Schizophrenia_01.pdf
+2025-05-02 20:54:43,970 - INFO - Loaded PDF file (text or OCR): knowledge_base\Schizophrenia_02.pdf
+2025-05-02 20:54:44,087 - WARNING - Standard text extraction failed: knowledge_base\Social Anxiety.pdf. Trying OCR...
+2025-05-02 20:54:45,284 - ERROR - OCR failed for knowledge_base\Social Anxiety.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:45,292 - WARNING - OCR also found empty content in: knowledge_base\Social Anxiety.pdf
+2025-05-02 20:54:45,840 - WARNING - Standard text extraction failed: knowledge_base\Social Anxiety_01.pdf. Trying OCR...
+2025-05-02 20:54:47,590 - ERROR - OCR failed for knowledge_base\Social Anxiety_01.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:47,596 - WARNING - OCR also found empty content in: knowledge_base\Social Anxiety_01.pdf
+2025-05-02 20:54:47,714 - WARNING - Standard text extraction failed: knowledge_base\Stress.pdf. Trying OCR...
+2025-05-02 20:54:48,559 - ERROR - OCR failed for knowledge_base\Stress.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:48,562 - WARNING - OCR also found empty content in: knowledge_base\Stress.pdf
+2025-05-02 20:54:48,769 - WARNING - Standard text extraction failed: knowledge_base\Stress_01.pdf. Trying OCR...
+2025-05-02 20:54:50,322 - ERROR - OCR failed for knowledge_base\Stress_01.pdf: tesseract is not installed or it's not in your PATH. See README file for more information.
+2025-05-02 20:54:50,339 - WARNING - OCR also found empty content in: knowledge_base\Stress_01.pdf
+2025-05-02 20:54:50,340 - INFO - Loaded 12 documents from folder: knowledge_base
+2025-05-02 20:54:50,828 - INFO - Chunked document into 12 chunks from source: knowledge_base\ADHD.pdf
+2025-05-02 20:54:50,843 - INFO - Chunked document into 45 chunks from source: knowledge_base\ADHD_01.pdf
+2025-05-02 20:54:50,845 - INFO - Chunked document into 5 chunks from source: knowledge_base\BDD.pdf
+2025-05-02 20:54:50,856 - INFO - Chunked document into 29 chunks from source: knowledge_base\BDD_02.pdf
+2025-05-02 20:54:50,860 - INFO - Chunked document into 4 chunks from source: knowledge_base\BPD.pdf
+2025-05-02 20:54:50,887 - INFO - Chunked document into 70 chunks from source: knowledge_base\Eating Disorder_01.pdf
+2025-05-02 20:54:50,889 - INFO - Chunked document into 8 chunks from source: knowledge_base\GAD.pdf
+2025-05-02 20:54:50,892 - INFO - Chunked document into 4 chunks from source: knowledge_base\Hoarding Disorder.pdf
+2025-05-02 20:54:50,896 - INFO - Chunked document into 10 chunks from source: knowledge_base\Hoarding Disorder_01.pdf
+2025-05-02 20:54:50,898 - INFO - Chunked document into 4 chunks from source: knowledge_base\Personality Disorder_01.pdf
+2025-05-02 20:54:50,901 - INFO - Chunked document into 6 chunks from source: knowledge_base\Schizophrenia_01.pdf
+2025-05-02 20:54:50,907 - INFO - Chunked document into 14 chunks from source: knowledge_base\Schizophrenia_02.pdf
+2025-05-02 20:54:56,353 - INFO - Successfully stored 211 chunks in the vector store.
+2025-05-02 20:54:56,354 - INFO - Document processing completed successfully.
+2025-05-03 12:57:59,208 - INFO - Initialized KnowledgeBaseService for collection: psychology_knowledge_base
+2025-05-03 12:57:59,329 - INFO - Loaded PDF file (text or OCR): knowledge_base\ADHD.pdf
+2025-05-03 12:57:59,433 - INFO - Loaded PDF file (text or OCR): knowledge_base\ADHD_01.pdf
+2025-05-03 12:58:00,074 - WARNING - Standard text extraction failed: knowledge_base\Anxeity.pdf. Trying OCR...
+2025-05-03 12:58:26,272 - INFO - Loaded PDF file (text or OCR): knowledge_base\Anxeity.pdf
+2025-05-03 12:58:26,289 - INFO - Loaded PDF file (text or OCR): knowledge_base\BDD.pdf
+2025-05-03 12:58:26,414 - WARNING - Standard text extraction failed: knowledge_base\BDD_01.pdf. Trying OCR...
+2025-05-03 12:58:34,601 - INFO - Loaded PDF file (text or OCR): knowledge_base\BDD_01.pdf
+2025-05-03 12:58:34,981 - INFO - Loaded PDF file (text or OCR): knowledge_base\BDD_02.pdf
+2025-05-03 12:58:35,245 - WARNING - Standard text extraction failed: knowledge_base\bipolar.pdf. Trying OCR...
+2025-05-03 12:58:47,956 - INFO - Loaded PDF file (text or OCR): knowledge_base\bipolar.pdf
+2025-05-03 12:58:48,014 - WARNING - Standard text extraction failed: knowledge_base\bipolar_01.pdf. Trying OCR...
+2025-05-03 12:58:54,664 - INFO - Loaded PDF file (text or OCR): knowledge_base\bipolar_01.pdf
+2025-05-03 12:58:55,354 - WARNING - Standard text extraction failed: knowledge_base\bipolar_02.pdf. Trying OCR...
+2025-05-03 12:59:11,077 - INFO - Loaded PDF file (text or OCR): knowledge_base\bipolar_02.pdf
+2025-05-03 12:59:11,102 - INFO - Loaded PDF file (text or OCR): knowledge_base\BPD.pdf
+2025-05-03 12:59:11,677 - WARNING - Standard text extraction failed: knowledge_base\BPD_01.pdf. Trying OCR...
+2025-05-03 12:59:38,833 - INFO - Loaded PDF file (text or OCR): knowledge_base\BPD_01.pdf
+2025-05-03 12:59:40,606 - WARNING - Standard text extraction failed: knowledge_base\BPD_03.pdf. Trying OCR...
+2025-05-03 13:00:05,564 - INFO - Loaded PDF file (text or OCR): knowledge_base\BPD_03.pdf
+2025-05-03 13:00:06,277 - WARNING - Standard text extraction failed: knowledge_base\depression.pdf. Trying OCR...
+2025-05-03 13:00:32,298 - INFO - Loaded PDF file (text or OCR): knowledge_base\depression.pdf
+2025-05-03 13:00:32,604 - WARNING - Standard text extraction failed: knowledge_base\depression_02.pdf. Trying OCR...
+2025-05-03 13:00:50,010 - INFO - Loaded PDF file (text or OCR): knowledge_base\depression_02.pdf
+2025-05-03 13:00:50,158 - WARNING - Standard text extraction failed: knowledge_base\Eating Disorder.pdf. Trying OCR...
+2025-05-03 13:01:07,234 - INFO - Loaded PDF file (text or OCR): knowledge_base\Eating Disorder.pdf
+2025-05-03 13:01:07,386 - INFO - Loaded PDF file (text or OCR): knowledge_base\Eating Disorder_01.pdf
+2025-05-03 13:01:07,697 - WARNING - Standard text extraction failed: knowledge_base\Eating Disorder_02.pdf. Trying OCR...
+2025-05-03 13:01:33,235 - INFO - Loaded PDF file (text or OCR): knowledge_base\Eating Disorder_02.pdf
+2025-05-03 13:01:33,293 - INFO - Loaded PDF file (text or OCR): knowledge_base\GAD.pdf
+2025-05-03 13:01:34,376 - WARNING - Standard text extraction failed: knowledge_base\GAD_01.pdf. Trying OCR...
+2025-05-03 13:01:57,529 - INFO - Loaded PDF file (text or OCR): knowledge_base\GAD_01.pdf
+2025-05-03 13:01:57,564 - INFO - Loaded PDF file (text or OCR): knowledge_base\Hoarding Disorder.pdf
+2025-05-03 13:01:57,605 - INFO - Loaded PDF file (text or OCR): knowledge_base\Hoarding Disorder_01.pdf
+2025-05-03 13:01:57,679 - WARNING - Standard text extraction failed: knowledge_base\Hoarding Disorder_02.pdf. Trying OCR...
+2025-05-03 13:02:03,795 - INFO - Loaded PDF file (text or OCR): knowledge_base\Hoarding Disorder_02.pdf
+2025-05-03 13:02:03,883 - WARNING - Standard text extraction failed: knowledge_base\OCD.pdf. Trying OCR...
+2025-05-03 13:02:16,583 - INFO - Loaded PDF file (text or OCR): knowledge_base\OCD.pdf
+2025-05-03 13:02:17,349 - WARNING - Standard text extraction failed: knowledge_base\OCD_01.pdf. Trying OCR...
+2025-05-03 13:02:35,365 - INFO - Loaded PDF file (text or OCR): knowledge_base\OCD_01.pdf
+2025-05-03 13:02:35,517 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder.pdf. Trying OCR...
+2025-05-03 13:02:44,074 - INFO - Loaded PDF file (text or OCR): knowledge_base\Panic Disorder.pdf
+2025-05-03 13:02:44,165 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder_01.pdf. Trying OCR...
+2025-05-03 13:02:48,452 - INFO - Loaded PDF file (text or OCR): knowledge_base\Panic Disorder_01.pdf
+2025-05-03 13:02:49,287 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder_02.pdf. Trying OCR...
+2025-05-03 13:03:06,632 - INFO - Loaded PDF file (text or OCR): knowledge_base\Panic Disorder_02.pdf
+2025-05-03 13:03:06,700 - WARNING - Standard text extraction failed: knowledge_base\Personality Disorder.pdf. Trying OCR...
+2025-05-03 13:03:11,661 - INFO - Loaded PDF file (text or OCR): knowledge_base\Personality Disorder.pdf
+2025-05-03 13:03:11,688 - INFO - Loaded PDF file (text or OCR): knowledge_base\Personality Disorder_01.pdf
+2025-05-03 13:03:12,731 - WARNING - Standard text extraction failed: knowledge_base\Personality Disorder_02.pdf. Trying OCR...
+2025-05-03 13:03:52,866 - INFO - Loaded PDF file (text or OCR): knowledge_base\Personality Disorder_02.pdf
+2025-05-03 13:03:52,971 - WARNING - Standard text extraction failed: knowledge_base\PTSD.pdf. Trying OCR...
+2025-05-03 13:04:06,351 - INFO - Loaded PDF file (text or OCR): knowledge_base\PTSD.pdf
+2025-05-03 13:04:06,453 - WARNING - Standard text extraction failed: knowledge_base\PTSD_01.pdf. Trying OCR...
+2025-05-03 13:04:11,365 - INFO - Loaded PDF file (text or OCR): knowledge_base\PTSD_01.pdf
+2025-05-03 13:04:11,528 - WARNING - Standard text extraction failed: knowledge_base\PTSD_02.pdf. Trying OCR...
+2025-05-03 13:04:28,815 - INFO - Loaded PDF file (text or OCR): knowledge_base\PTSD_02.pdf
+2025-05-03 13:04:28,936 - WARNING - Standard text extraction failed: knowledge_base\Schizophrenia.pdf. Trying OCR...
+2025-05-03 13:04:39,627 - INFO - Loaded PDF file (text or OCR): knowledge_base\Schizophrenia.pdf
+2025-05-03 13:04:39,722 - INFO - Loaded PDF file (text or OCR): knowledge_base\Schizophrenia_01.pdf
+2025-05-03 13:04:39,906 - INFO - Loaded PDF file (text or OCR): knowledge_base\Schizophrenia_02.pdf
+2025-05-03 13:04:40,061 - WARNING - Standard text extraction failed: knowledge_base\Social Anxiety.pdf. Trying OCR...
+2025-05-03 13:04:49,580 - INFO - Loaded PDF file (text or OCR): knowledge_base\Social Anxiety.pdf
+2025-05-03 13:04:49,962 - WARNING - Standard text extraction failed: knowledge_base\Social Anxiety_01.pdf. Trying OCR...
+2025-05-03 13:05:01,228 - INFO - Loaded PDF file (text or OCR): knowledge_base\Social Anxiety_01.pdf
+2025-05-03 13:05:01,327 - WARNING - Standard text extraction failed: knowledge_base\Stress.pdf. Trying OCR...
+2025-05-03 13:05:06,859 - INFO - Loaded PDF file (text or OCR): knowledge_base\Stress.pdf
+2025-05-03 13:05:07,767 - WARNING - Standard text extraction failed: knowledge_base\Stress_01.pdf. Trying OCR...
+2025-05-03 13:05:20,185 - INFO - Loaded PDF file (text or OCR): knowledge_base\Stress_01.pdf
+2025-05-03 13:05:20,196 - INFO - Loaded 40 documents from folder: knowledge_base
+2025-05-03 13:05:20,803 - INFO - Chunked document into 12 chunks from source: knowledge_base\ADHD.pdf
+2025-05-03 13:05:20,825 - INFO - Chunked document into 45 chunks from source: knowledge_base\ADHD_01.pdf
+2025-05-03 13:05:20,835 - INFO - Chunked document into 18 chunks from source: knowledge_base\Anxeity.pdf
+2025-05-03 13:05:20,838 - INFO - Chunked document into 5 chunks from source: knowledge_base\BDD.pdf
+2025-05-03 13:05:20,842 - INFO - Chunked document into 6 chunks from source: knowledge_base\BDD_01.pdf
+2025-05-03 13:05:20,858 - INFO - Chunked document into 29 chunks from source: knowledge_base\BDD_02.pdf
+2025-05-03 13:05:20,860 - INFO - Chunked document into 9 chunks from source: knowledge_base\bipolar.pdf
+2025-05-03 13:05:20,862 - INFO - Chunked document into 6 chunks from source: knowledge_base\bipolar_01.pdf
+2025-05-03 13:05:20,867 - INFO - Chunked document into 16 chunks from source: knowledge_base\bipolar_02.pdf
+2025-05-03 13:05:20,869 - INFO - Chunked document into 4 chunks from source: knowledge_base\BPD.pdf
+2025-05-03 13:05:20,874 - INFO - Chunked document into 21 chunks from source: knowledge_base\BPD_01.pdf
+2025-05-03 13:05:20,878 - INFO - Chunked document into 19 chunks from source: knowledge_base\BPD_03.pdf
+2025-05-03 13:05:20,883 - INFO - Chunked document into 17 chunks from source: knowledge_base\depression.pdf
+2025-05-03 13:05:20,886 - INFO - Chunked document into 13 chunks from source: knowledge_base\depression_02.pdf
+2025-05-03 13:05:20,889 - INFO - Chunked document into 11 chunks from source: knowledge_base\Eating Disorder.pdf
+2025-05-03 13:05:20,908 - INFO - Chunked document into 70 chunks from source: knowledge_base\Eating Disorder_01.pdf
+2025-05-03 13:05:20,915 - INFO - Chunked document into 13 chunks from source: knowledge_base\Eating Disorder_02.pdf
+2025-05-03 13:05:20,919 - INFO - Chunked document into 8 chunks from source: knowledge_base\GAD.pdf
+2025-05-03 13:05:20,926 - INFO - Chunked document into 20 chunks from source: knowledge_base\GAD_01.pdf
+2025-05-03 13:05:20,927 - INFO - Chunked document into 4 chunks from source: knowledge_base\Hoarding Disorder.pdf
+2025-05-03 13:05:20,929 - INFO - Chunked document into 10 chunks from source: knowledge_base\Hoarding Disorder_01.pdf
+2025-05-03 13:05:20,932 - INFO - Chunked document into 4 chunks from source: knowledge_base\Hoarding Disorder_02.pdf
+2025-05-03 13:05:20,935 - INFO - Chunked document into 8 chunks from source: knowledge_base\OCD.pdf
+2025-05-03 13:05:20,940 - INFO - Chunked document into 18 chunks from source: knowledge_base\OCD_01.pdf
+2025-05-03 13:05:20,941 - INFO - Chunked document into 6 chunks from source: knowledge_base\Panic Disorder.pdf
+2025-05-03 13:05:20,943 - INFO - Chunked document into 3 chunks from source: knowledge_base\Panic Disorder_01.pdf
+2025-05-03 13:05:20,946 - INFO - Chunked document into 13 chunks from source: knowledge_base\Panic Disorder_02.pdf
+2025-05-03 13:05:20,946 - INFO - Chunked document into 3 chunks from source: knowledge_base\Personality Disorder.pdf
+2025-05-03 13:05:20,948 - INFO - Chunked document into 4 chunks from source: knowledge_base\Personality Disorder_01.pdf
+2025-05-03 13:05:20,954 - INFO - Chunked document into 29 chunks from source: knowledge_base\Personality Disorder_02.pdf
+2025-05-03 13:05:20,957 - INFO - Chunked document into 8 chunks from source: knowledge_base\PTSD.pdf
+2025-05-03 13:05:20,959 - INFO - Chunked document into 5 chunks from source: knowledge_base\PTSD_01.pdf
+2025-05-03 13:05:20,962 - INFO - Chunked document into 14 chunks from source: knowledge_base\PTSD_02.pdf
+2025-05-03 13:05:20,963 - INFO - Chunked document into 7 chunks from source: knowledge_base\Schizophrenia.pdf
+2025-05-03 13:05:20,965 - INFO - Chunked document into 6 chunks from source: knowledge_base\Schizophrenia_01.pdf
+2025-05-03 13:05:20,968 - INFO - Chunked document into 14 chunks from source: knowledge_base\Schizophrenia_02.pdf
+2025-05-03 13:05:20,970 - INFO - Chunked document into 6 chunks from source: knowledge_base\Social Anxiety.pdf
+2025-05-03 13:05:20,973 - INFO - Chunked document into 10 chunks from source: knowledge_base\Social Anxiety_01.pdf
+2025-05-03 13:05:20,975 - INFO - Chunked document into 5 chunks from source: knowledge_base\Stress.pdf
+2025-05-03 13:05:20,977 - INFO - Chunked document into 7 chunks from source: knowledge_base\Stress_01.pdf
+2025-05-03 13:05:24,943 - INFO - Successfully stored 526 chunks in the vector store.
+2025-05-03 13:05:24,944 - INFO - Document processing completed successfully.
+2025-05-03 13:09:00,860 - INFO - Initialized KnowledgeBaseService for collection: psychology_knowledge_base
+2025-05-03 13:09:38,424 - INFO - Initialized KnowledgeBaseService for collection: psychology_knowledge_base
+2025-05-03 13:09:38,587 - INFO - Loaded PDF file (text or OCR): knowledge_base\ADHD.pdf
+2025-05-03 13:09:38,722 - INFO - Loaded PDF file (text or OCR): knowledge_base\ADHD_01.pdf
+2025-05-03 13:09:39,438 - WARNING - Standard text extraction failed: knowledge_base\Anxeity.pdf. Trying OCR...
+2025-05-03 13:10:04,020 - INFO - Loaded PDF file (text or OCR): knowledge_base\Anxeity.pdf
+2025-05-03 13:10:04,060 - INFO - Loaded PDF file (text or OCR): knowledge_base\BDD.pdf
+2025-05-03 13:10:04,206 - WARNING - Standard text extraction failed: knowledge_base\BDD_01.pdf. Trying OCR...
+2025-05-03 13:10:12,263 - INFO - Loaded PDF file (text or OCR): knowledge_base\BDD_01.pdf
+2025-05-03 13:10:12,288 - INFO - Loaded PDF file (text or OCR): knowledge_base\BDD_02.pdf
+2025-05-03 13:10:12,413 - WARNING - Standard text extraction failed: knowledge_base\bipolar.pdf. Trying OCR...
+2025-05-03 13:10:24,501 - INFO - Loaded PDF file (text or OCR): knowledge_base\bipolar.pdf
+2025-05-03 13:10:24,597 - WARNING - Standard text extraction failed: knowledge_base\bipolar_01.pdf. Trying OCR...
+2025-05-03 13:10:30,885 - INFO - Loaded PDF file (text or OCR): knowledge_base\bipolar_01.pdf
+2025-05-03 13:10:32,485 - WARNING - Standard text extraction failed: knowledge_base\bipolar_02.pdf. Trying OCR...
+2025-05-03 13:10:49,214 - INFO - Loaded PDF file (text or OCR): knowledge_base\bipolar_02.pdf
+2025-05-03 13:10:49,241 - INFO - Loaded PDF file (text or OCR): knowledge_base\BPD.pdf
+2025-05-03 13:10:49,835 - WARNING - Standard text extraction failed: knowledge_base\BPD_01.pdf. Trying OCR...
+2025-05-03 13:11:16,366 - INFO - Loaded PDF file (text or OCR): knowledge_base\BPD_01.pdf
+2025-05-03 13:11:16,950 - WARNING - Standard text extraction failed: knowledge_base\BPD_03.pdf. Trying OCR...
+2025-05-03 13:11:41,226 - INFO - Loaded PDF file (text or OCR): knowledge_base\BPD_03.pdf
+2025-05-03 13:11:41,506 - WARNING - Standard text extraction failed: knowledge_base\depression.pdf. Trying OCR...
+2025-05-03 13:12:07,392 - INFO - Loaded PDF file (text or OCR): knowledge_base\depression.pdf
+2025-05-03 13:12:07,752 - WARNING - Standard text extraction failed: knowledge_base\depression_02.pdf. Trying OCR...
+2025-05-03 13:12:25,566 - INFO - Loaded PDF file (text or OCR): knowledge_base\depression_02.pdf
+2025-05-03 13:12:25,751 - WARNING - Standard text extraction failed: knowledge_base\Eating Disorder.pdf. Trying OCR...
+2025-05-03 13:12:43,226 - INFO - Loaded PDF file (text or OCR): knowledge_base\Eating Disorder.pdf
+2025-05-03 13:12:43,694 - INFO - Loaded PDF file (text or OCR): knowledge_base\Eating Disorder_01.pdf
+2025-05-03 13:12:44,244 - WARNING - Standard text extraction failed: knowledge_base\Eating Disorder_02.pdf. Trying OCR...
+2025-05-03 13:13:10,509 - INFO - Loaded PDF file (text or OCR): knowledge_base\Eating Disorder_02.pdf
+2025-05-03 13:13:10,551 - INFO - Loaded PDF file (text or OCR): knowledge_base\GAD.pdf
+2025-05-03 13:13:11,694 - WARNING - Standard text extraction failed: knowledge_base\GAD_01.pdf. Trying OCR...
+2025-05-03 13:13:34,711 - INFO - Loaded PDF file (text or OCR): knowledge_base\GAD_01.pdf
+2025-05-03 13:13:34,743 - INFO - Loaded PDF file (text or OCR): knowledge_base\Hoarding Disorder.pdf
+2025-05-03 13:13:34,775 - INFO - Loaded PDF file (text or OCR): knowledge_base\Hoarding Disorder_01.pdf
+2025-05-03 13:13:34,905 - WARNING - Standard text extraction failed: knowledge_base\Hoarding Disorder_02.pdf. Trying OCR...
+2025-05-03 13:13:41,255 - INFO - Loaded PDF file (text or OCR): knowledge_base\Hoarding Disorder_02.pdf
+2025-05-03 13:13:41,385 - WARNING - Standard text extraction failed: knowledge_base\OCD.pdf. Trying OCR...
+2025-05-03 13:13:54,774 - INFO - Loaded PDF file (text or OCR): knowledge_base\OCD.pdf
+2025-05-03 13:13:55,431 - WARNING - Standard text extraction failed: knowledge_base\OCD_01.pdf. Trying OCR...
+2025-05-03 13:14:14,239 - INFO - Loaded PDF file (text or OCR): knowledge_base\OCD_01.pdf
+2025-05-03 13:14:14,298 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder.pdf. Trying OCR...
+2025-05-03 13:14:22,983 - INFO - Loaded PDF file (text or OCR): knowledge_base\Panic Disorder.pdf
+2025-05-03 13:14:23,048 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder_01.pdf. Trying OCR...
+2025-05-03 13:14:27,816 - INFO - Loaded PDF file (text or OCR): knowledge_base\Panic Disorder_01.pdf
+2025-05-03 13:14:28,785 - WARNING - Standard text extraction failed: knowledge_base\Panic Disorder_02.pdf. Trying OCR...
+2025-05-03 13:14:47,900 - INFO - Loaded PDF file (text or OCR): knowledge_base\Panic Disorder_02.pdf
+2025-05-03 13:14:48,075 - WARNING - Standard text extraction failed: knowledge_base\Personality Disorder.pdf. Trying OCR...
+2025-05-03 13:14:53,810 - INFO - Loaded PDF file (text or OCR): knowledge_base\Personality Disorder.pdf
+2025-05-03 13:14:53,827 - INFO - Loaded PDF file (text or OCR): knowledge_base\Personality Disorder_01.pdf
+2025-05-03 13:14:54,824 - WARNING - Standard text extraction failed: knowledge_base\Personality Disorder_02.pdf. Trying OCR...
+2025-05-03 13:15:37,335 - INFO - Loaded PDF file (text or OCR): knowledge_base\Personality Disorder_02.pdf
+2025-05-03 13:15:37,468 - WARNING - Standard text extraction failed: knowledge_base\PTSD.pdf. Trying OCR...
+2025-05-03 13:15:49,607 - INFO - Loaded PDF file (text or OCR): knowledge_base\PTSD.pdf
+2025-05-03 13:15:49,680 - WARNING - Standard text extraction failed: knowledge_base\PTSD_01.pdf. Trying OCR...
+2025-05-03 13:15:55,160 - INFO - Loaded PDF file (text or OCR): knowledge_base\PTSD_01.pdf
+2025-05-03 13:15:55,368 - WARNING - Standard text extraction failed: knowledge_base\PTSD_02.pdf. Trying OCR...
+2025-05-03 13:16:11,984 - INFO - Loaded PDF file (text or OCR): knowledge_base\PTSD_02.pdf
+2025-05-03 13:16:12,121 - WARNING - Standard text extraction failed: knowledge_base\Schizophrenia.pdf. Trying OCR...
+2025-05-03 13:16:23,736 - INFO - Loaded PDF file (text or OCR): knowledge_base\Schizophrenia.pdf
+2025-05-03 13:16:23,751 - INFO - Loaded PDF file (text or OCR): knowledge_base\Schizophrenia_01.pdf
+2025-05-03 13:16:23,791 - INFO - Loaded PDF file (text or OCR): knowledge_base\Schizophrenia_02.pdf
+2025-05-03 13:16:23,861 - WARNING - Standard text extraction failed: knowledge_base\Social Anxiety.pdf. Trying OCR...
+2025-05-03 13:16:33,065 - INFO - Loaded PDF file (text or OCR): knowledge_base\Social Anxiety.pdf
+2025-05-03 13:16:33,476 - WARNING - Standard text extraction failed: knowledge_base\Social Anxiety_01.pdf. Trying OCR...
+2025-05-03 13:16:44,563 - INFO - Loaded PDF file (text or OCR): knowledge_base\Social Anxiety_01.pdf
+2025-05-03 13:16:44,658 - WARNING - Standard text extraction failed: knowledge_base\Stress.pdf. Trying OCR...
+2025-05-03 13:16:50,274 - INFO - Loaded PDF file (text or OCR): knowledge_base\Stress.pdf
+2025-05-03 13:16:50,382 - WARNING - Standard text extraction failed: knowledge_base\Stress_01.pdf. Trying OCR...
+2025-05-03 13:17:03,386 - INFO - Loaded PDF file (text or OCR): knowledge_base\Stress_01.pdf
+2025-05-03 13:17:03,392 - INFO - Loaded 40 documents from folder: knowledge_base
+2025-05-03 13:17:04,129 - INFO - Chunked document into 12 chunks from source: knowledge_base\ADHD.pdf
+2025-05-03 13:17:04,166 - INFO - Chunked document into 45 chunks from source: knowledge_base\ADHD_01.pdf
+2025-05-03 13:17:04,179 - INFO - Chunked document into 18 chunks from source: knowledge_base\Anxeity.pdf
+2025-05-03 13:17:04,183 - INFO - Chunked document into 5 chunks from source: knowledge_base\BDD.pdf
+2025-05-03 13:17:04,188 - INFO - Chunked document into 6 chunks from source: knowledge_base\BDD_01.pdf
+2025-05-03 13:17:04,201 - INFO - Chunked document into 29 chunks from source: knowledge_base\BDD_02.pdf
+2025-05-03 13:17:04,207 - INFO - Chunked document into 9 chunks from source: knowledge_base\bipolar.pdf
+2025-05-03 13:17:04,211 - INFO - Chunked document into 6 chunks from source: knowledge_base\bipolar_01.pdf
+2025-05-03 13:17:04,218 - INFO - Chunked document into 16 chunks from source: knowledge_base\bipolar_02.pdf
+2025-05-03 13:17:04,221 - INFO - Chunked document into 4 chunks from source: knowledge_base\BPD.pdf
+2025-05-03 13:17:04,227 - INFO - Chunked document into 21 chunks from source: knowledge_base\BPD_01.pdf
+2025-05-03 13:17:04,233 - INFO - Chunked document into 19 chunks from source: knowledge_base\BPD_03.pdf
+2025-05-03 13:17:04,237 - INFO - Chunked document into 17 chunks from source: knowledge_base\depression.pdf
+2025-05-03 13:17:04,242 - INFO - Chunked document into 13 chunks from source: knowledge_base\depression_02.pdf
+2025-05-03 13:17:04,245 - INFO - Chunked document into 11 chunks from source: knowledge_base\Eating Disorder.pdf
+2025-05-03 13:17:04,264 - INFO - Chunked document into 70 chunks from source: knowledge_base\Eating Disorder_01.pdf
+2025-05-03 13:17:04,268 - INFO - Chunked document into 13 chunks from source: knowledge_base\Eating Disorder_02.pdf
+2025-05-03 13:17:04,271 - INFO - Chunked document into 8 chunks from source: knowledge_base\GAD.pdf
+2025-05-03 13:17:04,277 - INFO - Chunked document into 20 chunks from source: knowledge_base\GAD_01.pdf
+2025-05-03 13:17:04,278 - INFO - Chunked document into 4 chunks from source: knowledge_base\Hoarding Disorder.pdf
+2025-05-03 13:17:04,281 - INFO - Chunked document into 10 chunks from source: knowledge_base\Hoarding Disorder_01.pdf
+2025-05-03 13:17:04,283 - INFO - Chunked document into 4 chunks from source: knowledge_base\Hoarding Disorder_02.pdf
+2025-05-03 13:17:04,285 - INFO - Chunked document into 8 chunks from source: knowledge_base\OCD.pdf
+2025-05-03 13:17:04,291 - INFO - Chunked document into 18 chunks from source: knowledge_base\OCD_01.pdf
+2025-05-03 13:17:04,293 - INFO - Chunked document into 6 chunks from source: knowledge_base\Panic Disorder.pdf
+2025-05-03 13:17:04,294 - INFO - Chunked document into 3 chunks from source: knowledge_base\Panic Disorder_01.pdf
+2025-05-03 13:17:04,297 - INFO - Chunked document into 13 chunks from source: knowledge_base\Panic Disorder_02.pdf
+2025-05-03 13:17:04,298 - INFO - Chunked document into 3 chunks from source: knowledge_base\Personality Disorder.pdf
+2025-05-03 13:17:04,300 - INFO - Chunked document into 4 chunks from source: knowledge_base\Personality Disorder_01.pdf
+2025-05-03 13:17:04,308 - INFO - Chunked document into 29 chunks from source: knowledge_base\Personality Disorder_02.pdf
+2025-05-03 13:17:04,310 - INFO - Chunked document into 8 chunks from source: knowledge_base\PTSD.pdf
+2025-05-03 13:17:04,311 - INFO - Chunked document into 5 chunks from source: knowledge_base\PTSD_01.pdf
+2025-05-03 13:17:04,316 - INFO - Chunked document into 14 chunks from source: knowledge_base\PTSD_02.pdf
+2025-05-03 13:17:04,318 - INFO - Chunked document into 7 chunks from source: knowledge_base\Schizophrenia.pdf
+2025-05-03 13:17:04,319 - INFO - Chunked document into 6 chunks from source: knowledge_base\Schizophrenia_01.pdf
+2025-05-03 13:17:04,322 - INFO - Chunked document into 14 chunks from source: knowledge_base\Schizophrenia_02.pdf
+2025-05-03 13:17:04,323 - INFO - Chunked document into 6 chunks from source: knowledge_base\Social Anxiety.pdf
+2025-05-03 13:17:04,325 - INFO - Chunked document into 10 chunks from source: knowledge_base\Social Anxiety_01.pdf
+2025-05-03 13:17:04,327 - INFO - Chunked document into 5 chunks from source: knowledge_base\Stress.pdf
+2025-05-03 13:17:04,329 - INFO - Chunked document into 7 chunks from source: knowledge_base\Stress_01.pdf
+2025-05-03 13:17:08,952 - INFO - Successfully stored 526 chunks in the vector store.
+2025-05-03 13:17:08,952 - INFO - Document processing completed successfully.

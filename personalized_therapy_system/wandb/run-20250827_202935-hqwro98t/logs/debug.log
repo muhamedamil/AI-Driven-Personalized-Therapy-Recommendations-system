@@ -1,0 +1,789 @@
+2025-08-27 20:29:35,055 INFO    MainThread:9036 [wandb_init.py:setup_run_log_directory():703] Logging user logs to C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\personalized_therapy_system\wandb\run-20250827_202935-hqwro98t\logs\debug.log
+2025-08-27 20:29:35,056 INFO    MainThread:9036 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\personalized_therapy_system\wandb\run-20250827_202935-hqwro98t\logs\debug-internal.log
+2025-08-27 20:29:35,056 INFO    MainThread:9036 [wandb_init.py:init():830] calling init triggers
+2025-08-27 20:29:35,057 INFO    MainThread:9036 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'session_id': '0b5ac196-3cec-4401-9910-17df0c57bf06', 'user_name': 'muhammed amil', '_wandb': {}}
+2025-08-27 20:50:48,486 INFO    MsgRouterThr:9036 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 2 handles.
+2025-08-27 20:50:53,628 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,745 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,746 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,747 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,748 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,758 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,759 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,760 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,761 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,761 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,762 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,762 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,764 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,767 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,767 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,768 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,769 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,775 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,775 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,776 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,776 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,778 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,778 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,778 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,779 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,779 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,780 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:53,781 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stderr callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2421, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+2025-08-27 20:50:54,144 ERROR   MainThread:9036 [redirect.py:_on_write():664] [all runs] error in stdout callback
+Traceback (most recent call last):
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\redirect.py", line 662, in _on_write
+    cb(written_data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 2415, in <lambda>
+    lambda data: self._console_raw_callback("stdout", data),
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 399, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 457, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\wandb_run.py", line 1583, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface.py", line 771, in publish_output_raw
+    self._publish_output_raw(o)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_shared.py", line 38, in _publish_output_raw
+    self._publish(rec)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\interface\interface_sock.py", line 39, in _publish
+    self._sock_client.send_record_publish(record)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 166, in send_record_publish
+    self.send_server_request(server_req)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 146, in send_server_request
+    self._send_message(msg)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 143, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "C:\Users\amil\anaconda3\envs\main_module_env\lib\site-packages\wandb\sdk\lib\sock_client.py", line 122, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine

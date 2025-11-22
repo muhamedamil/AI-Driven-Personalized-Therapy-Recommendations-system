@@ -1,0 +1,82 @@
+_wandb:
+    value:
+        cli_version: 0.21.1
+        e:
+            nrybx2fyqmx6f6atqjn1lhsrnf41rj25:
+                args:
+                    - main:app
+                    - --port
+                    - "7000"
+                cpu_count: 12
+                cpu_count_logical: 16
+                cudaVersion: "12.7"
+                disk:
+                    /:
+                        total: "487463055360"
+                        used: "416264515584"
+                email: amilasnils008@gmail.com
+                executable: C:\Users\amil\anaconda3\envs\main_module_env\python.exe
+                git:
+                    commit: 9c4e58fa70c488de1b0eb324e4c3ad0b7a3d54d3
+                    remote: https://github.com/amil122/AI-Driven-Personalized-Therapy-Recommendations-system.git
+                gpu: NVIDIA GeForce RTX 3050 Laptop GPU
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 2048
+                      memoryTotal: "4294967296"
+                      name: NVIDIA GeForce RTX 3050 Laptop GPU
+                      uuid: GPU-530ab506-57e4-a5a6-74b2-ed8cde74a405
+                host: Muhamedamil1
+                memory:
+                    total: "8259358720"
+                os: Windows-10-10.0.26100-SP0
+                program: -m __main__
+                python: CPython 3.10.16
+                root: C:\Users\amil\OneDrive\Documents\AI-Driven Personalized Therapy Recommendations system\personalized_therapy_system
+                startedAt: "2025-08-27T14:58:57.586609Z"
+                writerId: nrybx2fyqmx6f6atqjn1lhsrnf41rj25
+        m: []
+        python_version: 3.10.16
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 33
+                - 41
+                - 49
+                - 53
+                - 75
+                - 86
+                - 95
+                - 104
+                - 105
+            "2":
+                - 1
+                - 5
+                - 11
+                - 33
+                - 41
+                - 49
+                - 53
+                - 75
+                - 86
+                - 95
+                - 104
+                - 105
+            "3":
+                - 13
+                - 16
+                - 24
+            "4": 3.10.16
+            "5": 0.21.1
+            "6": 4.50.3
+            "8":
+                - 3
+            "12": 0.21.1
+            "13": windows-amd64
+session_id:
+    value: 0b5ac196-3cec-4401-9910-17df0c57bf06
+user_name:
+    value: muhammed amil
